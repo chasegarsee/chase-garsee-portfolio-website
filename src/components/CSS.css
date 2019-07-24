@@ -6,7 +6,7 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  margin: 100px auto;
+  margin: 2% auto;
 }
 
 .section img {
@@ -34,6 +34,14 @@
   width: 100%;
 }
 
+hr {
+  width: 9%;
+  height: 1px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  background: #ccc;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -47,16 +55,17 @@ ul {
 }
 
 li {
-  width: 100px;
-  height: 100px;
-  width: 33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
 }
 
 .fa-linkedin,
 .fa-envelope,
 .fa-twitter,
 .fa-github {
-  color: grey;
+  color: #545454;
 }
 
 .fa-linkedin:hover {
@@ -74,4 +83,37 @@ li {
 .fa-twitter:hover {
   color: rgb(0, 145, 255);
   transition: 250ms;
+}
+
+p {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  text-align: center;
+  color: #545454;
+}
+
+.java-cup {
+  width: 50px;
+  height: 50px;
+}
+
+.react {
+  width: 85px;
+  height: 50px;
+}
+
+.git {
+  width: 50px;
+  height: 50px;
+}
+
+.node {
+  width: 50px;
+  height: 50px;
+}
+
+.express {
+  width: 100px;
+  height: 50px;
 }

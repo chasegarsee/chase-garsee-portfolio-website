@@ -34,12 +34,12 @@ export class AboutMe extends React.Component {
             </li>
             <li className="twitter">
               <a href="http://twitter.com/chasegarsee" target="_blank">
-                <i class="fab fa-twitter fa-2x" />
+                <i class="fab fa-twitter fa-3x" />
               </a>
             </li>
             <li className="mail">
               <a href="mailto:chasegarsee@gmail.com.com" target="_blank">
-                <i class="far fa-envelope fa-2x" />
+                <i class="far fa-envelope fa-3x" />
               </a>
             </li>
             <li className="mail">

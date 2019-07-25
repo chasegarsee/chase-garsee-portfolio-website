@@ -1,35 +1,81 @@
 import React from "react";
-import { StyledDivWrapper } from "./Styles";
 import video from "../img-video/background4.mp4";
-import logo from "../img-video/logo7.png";
-import java from "../img-video/social-icons/java.png";
-import react from "../img-video/social-icons/react.png";
-import git from "../img-video/social-icons/git.png";
-import node from "../img-video/social-icons/node.png";
-import express from "../img-video/social-icons/express.png";
-import "./CSS.css";
+import logo from "../img-video/logo5.png";
+import "./AboutMeCSS.css";
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 export class AboutMe extends React.Component {
   constructor(props, context) {
     super(props, context);
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
 
-    this.state = {};
+  componentDidMount() {
+    Events.scrollEvent.register("begin", function() {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register("end", function() {
+      console.log("end", arguments);
+    });
+  }
+  scrollToTop() {
+    scroll.scrollToTop();
+  }
+  scrollTo() {
+    scroller.scrollTo("scroll-to-element", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart"
+    });
+  }
+  scrollToWithContainer() {
+    let goToContainer = new Promise((resolve, reject) => {
+      Events.scrollEvent.register("end", () => {
+        resolve();
+        Events.scrollEvent.remove("end");
+      });
+
+      scroller.scrollTo("scroll-container", {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart"
+      });
+    });
+
+    goToContainer.then(() =>
+      scroller.scrollTo("scroll-container-second-element", {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        containerId: "scroll-container"
+      })
+    );
+  }
+  componentWillUnmount() {
+    Events.scrollEvent.remove("begin");
+    Events.scrollEvent.remove("end");
   }
 
   render() {
-    const {} = this.state;
-
     return (
-      <div>
+      <div className="main-section">
         <div className="section">
           <img src={logo} />
           <div className="video-container">
-            <video className="video-background" loop autoPlay>
+            <video className="video-background" loop autoPlay mute>
               <source src={video} type="video/mp4" />
             </video>
           </div>
         </div>
-        <div className="lower-section" />
         <nav>
           <ul>
             <li className="twitter">
@@ -60,19 +106,12 @@ export class AboutMe extends React.Component {
         <hr />
         <p>Full Stack Developer with a passion for proper design. </p>
         <p>
-          Also, I <img className="git" src={git} /> gitty and over{" "}
-          <img className="react" src={react} /> when folks talk about
-          <img className="java-cup" src={java} />
-        </p>
-        <p>
-          But <img className="node" src={node} /> need to worry, that's how I
-          <img className="express" src={express} />
-          myself
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          necessitatibus totam explicabo id incidunt voluptatum fugit similique
+          repudiandae natus cumque optio quia molestiae, sapiente eligendi
+          dolores, repellendus temporibus at numquam!
         </p>
       </div>
     );
   }
-}
-
-{
 }

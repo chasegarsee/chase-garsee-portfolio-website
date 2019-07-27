@@ -1,20 +1,4 @@
-.projects {
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  overflow: hidden;
-
-  background-color: rgba(111, 145, 255, 0.105);
-}
-
-.projects img {
-  width: 50%;
-  height: 100%;
-  padding: 5px 5px;
-  z-index: 1;
+.main-portfolio-section {
 }
 
 .video-container {
@@ -23,93 +7,22 @@
   position: absolute;
   width: 50%;
 }
-
-.parallax-wrapper1 {
-  height: 95vh;
-  width: 100%;
-  /* background-image: url("../img-video/portfolio-backgrounds/background1.gif"); */
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  z-index: -1;
-}
-
-.parallax-wrapper2 {
-  height: 95vh;
-  width: 100%;
-  /* background-image: url("../img-video/portfolio-backgrounds/background1.gif"); */
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  z-index: -1;
-}
-
-.parallax-wrapper2 img {
-  height: 95vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-}
-
-.parallax-wrapper1 img {
-  height: 95vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-}
-
-.project-description {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: black;
-  width: 100%;
-  padding-left: 25%;
-}
-
 .project-one-wrapper {
-  margin-top: 3%;
-  height: auto;
-  width: 100%;
-  position: absolute;
-}
-
-.parallax-wrapper2 {
-  height: 100vh;
-  width: 100%;
-  /* background-image: url("../img-video/portfolio-backgrounds/background2.gif"); */
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-}
-
-.parallax-wrapper3 {
-  height: 100vh;
-  width: 100%;
-  /* background-image: url("../img-video/portfolio-backgrounds/background2.gif"); */
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-}
-
-.carousel-wrapper {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  width: 90%;
-  margin: auto;
+  /* margin-top: 3%;  */
+  height: 90vh;
+  position: absolute;
+  margin: 0 2%;
+}
+
+.left-side-carousel-wrapper {
+  display: flex;
+  width: 50%;
 }
 
 .carousel {
-  margin: auto;
-  height: auto;
-  width: 50%;
+  height: 50%;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.3) 15px 15px 30px 0px;
 }
 
@@ -130,3 +43,89 @@
 .carousel-control-next-icon {
   display: none;
 }
+
+.right-side-decription-wrapper {
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.tech-stack {
+  margin: 0 3%;
+  width: 25%;
+  height: 72%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-stack img,
+.tech-stack span {
+  width: 80%;
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-description p {
+  width: 50%;
+}
+
+/* .parallax-wrapper1 {
+  height: 95vh;
+  width: 100%;
+  background-image: url("../img-video/portfolio-backgrounds/background1.gif");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.parallax-wrapper2 {
+  height: 95vh;
+  width: 100%;
+  background-image: url("../img-video/portfolio-backgrounds/background1.gif");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.parallax-wrapper2 img {
+  height: 95vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+}
+
+.parallax-wrapper1 img {
+  height: 95vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+} 
+
+.parallax-wrapper2 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img-video/portfolio-backgrounds/background2.gif");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+}
+
+.parallax-wrapper3 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../img-video/portfolio-backgrounds/background2.gif");
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-attachment: fixed;
+}*/

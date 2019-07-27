@@ -1,5 +1,5 @@
-.main-section {
-  height: 100vh;
+.about-me-section {
+  height: 90vh;
 }
 
 .section {
@@ -10,7 +10,7 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  margin: 4% auto;
+  margin: 4% auto 2% auto;
 }
 
 .section img {
@@ -36,13 +36,21 @@ hr {
 nav {
   display: flex;
   justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  padding: 1% 0;
 }
 
 ul {
   padding: 0;
   display: flex;
+  align-items: center;
   list-style-type: none;
   width: 50%;
+  margin: 0;
 }
 
 li {
@@ -56,7 +64,6 @@ li {
 .fa-envelope,
 .fa-twitter,
 .fa-github {
-  color: #545454;
 }
 
 .fa-linkedin:hover {

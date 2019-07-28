@@ -1,5 +1,6 @@
+.main-section {
+}
 .about-me-section {
-  height: 90vh;
 }
 
 .section {
@@ -23,6 +24,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
+  width: 50%;
 }
 
 hr {
@@ -39,6 +41,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 2;
   padding: 1% 0;
@@ -60,25 +63,14 @@ li {
   width: 25%;
 }
 
-.fa-linkedin,
-.fa-envelope,
-.fa-twitter,
-.fa-github {
-}
-
-.fa-linkedin:hover {
-  color: rgb(0, 115, 255);
-  transition: 250ms;
-}
 .fa-github:hover {
   color: rgb(116, 0, 199);
   transition: 250ms;
 }
+
+.fa-twitter:hover,
+.fa-linkedin:hover,
 .fa-envelope:hover {
-  color: rgb(31, 82, 250);
-  transition: 250ms;
-}
-.fa-twitter:hover {
   color: rgb(0, 145, 255);
   transition: 250ms;
 }
@@ -91,27 +83,12 @@ p {
   color: #545454;
 }
 
-.java-cup {
-  width: 50px;
-  height: 50px;
-}
-
-.react {
-  width: 85px;
-  height: 50px;
-}
-
-.git {
-  width: 50px;
-  height: 50px;
-}
-
-.node {
-  width: 50px;
-  height: 50px;
-}
-
-.express {
-  width: 100px;
-  height: 50px;
+@media (max-width: 1000px) {
+  p {
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #545454;
+  }
 }

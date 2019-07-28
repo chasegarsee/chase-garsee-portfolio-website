@@ -42,17 +42,8 @@ function AboutMe(props) {
     transition: "600ms ease"
   };
 
-  let linkedin = {
+  let social = {
     color: change ? "rgb(0, 115, 255)" : "#545454"
-  };
-  let github = {
-    color: change ? "rgb(116, 0, 199)" : "#545454"
-  };
-  let envelope = {
-    color: change ? "rgb(31, 82, 250)" : "#545454"
-  };
-  let twitter = {
-    color: change ? "rgb(0, 145, 255)" : "#545454"
   };
   return (
     <div className="main-section">
@@ -69,7 +60,7 @@ function AboutMe(props) {
           <ul>
             <li className="twitter">
               <a
-                style={twitter}
+                style={social}
                 href="http://twitter.com/chasegarsee"
                 target="_blank"
               >
@@ -78,7 +69,7 @@ function AboutMe(props) {
             </li>
             <li className="github">
               <a
-                style={github}
+                style={social}
                 href="http://github.com/chasegarsee"
                 target="_blank"
               >
@@ -87,7 +78,7 @@ function AboutMe(props) {
             </li>
             <li className="linkedin">
               <a
-                style={linkedin}
+                style={social}
                 href="https://www.linkedin.com/in/chase-garsee-7b11a4105/"
                 target="_blank"
               >
@@ -96,7 +87,7 @@ function AboutMe(props) {
             </li>
             <li className="mail">
               <a
-                style={envelope}
+                style={social}
                 href="mailto:chasegarsee@gmail.com.com"
                 target="_blank"
               >
@@ -111,15 +102,15 @@ function AboutMe(props) {
           I am a graduate from Lambda School. I may not know everything, but I'm
           dedicated to learn something new every day I'm alive
         </p>
-      </div>
-      <div className="main-portfolio-section">
-        <div className="project-one-wrapper">
-          <div className="left-side-carousel-wrapper">
-            <Carousel interval={8000}>
-              <Carousel.Item>
-                <img src={tieme} />
-              </Carousel.Item>
-              {/* <Carousel.Item>
+
+        <div className="main-portfolio-section">
+          <div className="project-one-wrapper">
+            <div className="carousel-wrapper">
+              <Carousel interval={8000}>
+                <Carousel.Item>
+                  <img src={tieme} />
+                </Carousel.Item>
+                {/* <Carousel.Item>
                   <img src={search} />
                 </Carousel.Item>
                 <Carousel.Item>
@@ -128,30 +119,52 @@ function AboutMe(props) {
                 <Carousel.Item>
                   <img src={track} />
                 </Carousel.Item> */}
-            </Carousel>
-          </div>
-          <div className="right-side-decription-wrapper">
-            <div className="project-description-wrapper" />
-            <div className="tech-stack">
-              <h1>Stack</h1>
-              <img src={react} />
-              <img src={redux} />
-              <img src={java} />
-              <img src={spring} />
-              <img src={postgres} />
+              </Carousel>
+              <div className="tech-stack">
+                {/* <h1>Stack</h1> */}
+                <img src={react} />
+                <img src={redux} />
+                <img src={java} />
+                <img src={spring} />
+                <img src={postgres} />
+              </div>
             </div>
-            <div className="project-description">
-              <h1>TIEME NDO CRM </h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                architecto maiores dolores eos earum voluptatibus incidunt
-                repellendus ipsam ea ut est, in officia quidem. Nam reiciendis
-                quidem inventore laborum maxime.
-              </p>
-            </div>
-          </div>
 
-          {/* <div className="parallax-wrapper2">
+            <div className="project-description">
+              <div className="description">
+                <h1>TIEME NDO CRM </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta nisi consequuntur recusandae eligendi neque at quod
+                  architecto tenetur debitis aperiam animi iure ipsum officiis
+                  inventore ea, ullam, dolorum veritatis hic sint quibusdam
+                  quidem sequi quas praesentium? Non amet eligendi neque
+                  perspiciatis? Atque aliquam dolorum culpa corporis ipsam id,
+                  rerum illum at? Odit excepturi, cum eum porro ullam nemo in
+                  nulla maxime qui sunt aperiam quibusdam ratione esse tenetur
+                  deleniti expedita quasi ab, velit cupiditate.
+                </p>
+                <div className="links">
+                  <a href="http://github.com/chasegarsee" target="_blank">
+                    <i class="fab fa-git-square " />
+                  </a>
+                  <a
+                    href="https://tiemendo-marketing.netlify.com/"
+                    target="_blank"
+                  >
+                    <i class="fas fa-tv " />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="right-side-decription-wrapper">
+            <div className="project-description-wrapper" />
+
+            
+          </div> */}
+
+            {/* <div className="parallax-wrapper2">
               <img src={overlay1} />
               <div className="project-one-wrapper">
                 <h1>Lambda Team Builder</h1>
@@ -192,8 +205,9 @@ function AboutMe(props) {
                     <img src={user} />
                   </Carousel.Item>
                 </Carousel> */}
-          {/* </div>
+            {/* </div>
             </div> */}
+          </div>
         </div>
       </div>
     </div>

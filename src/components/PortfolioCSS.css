@@ -1,36 +1,19 @@
 .main-portfolio-section {
 }
 
-.video-container {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 50%;
-}
 .project-one-wrapper {
   display: flex;
-  /* margin-top: 3%;  */
-  height: 90vh;
-  position: absolute;
-  margin: 0 2%;
 }
 
-.left-side-carousel-wrapper {
+.carousel-wrapper {
   display: flex;
-  width: 50%;
-}
-
-.carousel {
-  height: 50%;
-  width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.3) 15px 15px 30px 0px;
+  margin: 2% 0 2% 2%;
 }
 
 .carousel img {
   border-radius: 7px;
-  height: 100%;
-  position: inherit;
-  width: 100%;
+  width: 943px;
+  max-width: 997px;
 }
 
 .carousel-inner .carousel-item {
@@ -44,88 +27,163 @@
   display: none;
 }
 
-.right-side-decription-wrapper {
-  display: flex;
-  width: 50%;
-  height: 100%;
-}
-
 .tech-stack {
-  margin: 0 3%;
-  width: 25%;
-  height: 72%;
+  margin: 0 2%;
+  max-width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 
-.tech-stack img,
-.tech-stack span {
-  width: 80%;
+.tech-stack img {
+  width: 75px;
+  position: relative;
 }
 
 .project-description {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project-description p {
-  width: 50%;
-}
-
-/* .parallax-wrapper1 {
-  height: 95vh;
+  justify-content: center;
   width: 100%;
-  background-image: url("../img-video/portfolio-backgrounds/background1.gif");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  z-index: -1;
+  margin: 2%;
 }
 
-.parallax-wrapper2 {
-  height: 95vh;
-  width: 100%;
-  background-image: url("../img-video/portfolio-backgrounds/background1.gif");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-  z-index: -1;
+.description p {
+  width: 75%;
+  position: relative;
 }
 
-.parallax-wrapper2 img {
-  height: 95vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.links a {
+  font-size: 4rem;
 }
 
-.parallax-wrapper1 img {
-  height: 95vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-} 
+@media (max-width: 1450px) {
+  .carousel img {
+    border-radius: 7px;
+    width: 600px;
+    max-width: 660px;
+  }
 
-.parallax-wrapper2 {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../img-video/portfolio-backgrounds/background2.gif");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
+  .tech-stack {
+    margin: 0 2%;
+    max-width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tech-stack h1 {
+    font-size: 1rem;
+  }
+
+  .tech-stack img {
+    width: 45px;
+    position: relative;
+  }
+
+  .project-description {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2%;
+  }
+
+  .description h1 {
+    font-size: 1rem;
+  }
+
+  .description p {
+    width: 90%;
+    position: relative;
+    font-size: 1rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .links a {
+    font-size: 3rem;
+  }
 }
 
-.parallax-wrapper3 {
-  height: 100vh;
-  width: 100%;
-  background-image: url("../img-video/portfolio-backgrounds/background2.gif");
-  background-size: cover;
-  background-position: center;
-  display: table;
-  background-attachment: fixed;
-}*/
+@media (max-width: 1156px) {
+  .project-one-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-wrapper {
+    flex-direction: column;
+    margin: 2%;
+  }
+  .carousel img {
+    border-radius: 7px;
+    width: 800px;
+    max-width: 750px;
+    margin: 0;
+  }
+
+  .tech-stack {
+    margin: 2%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .tech-stack h1 {
+    display: none;
+  }
+
+  .tech-stack img {
+    width: 45px;
+    position: relative;
+  }
+
+  .description h1 {
+    font-size: 1.5rem;
+  }
+
+  .description p {
+    width: 90%;
+    position: relative;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .carousel img {
+    width: 590px;
+  }
+
+  .description p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel img {
+    width: 500px;
+  }
+
+  .description p {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .carousel img {
+    width: 400px;
+  }
+
+  .description p {
+    width: 70%;
+  }
+}

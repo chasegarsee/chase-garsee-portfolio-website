@@ -51,7 +51,13 @@ function AboutMe(props) {
         <div className="section">
           <img src={logo} />
           <div className="video-container">
-            <video className="video-background" loop autoPlay mute>
+            <video
+              className="video-background"
+              loop
+              autoPlay
+              mute
+              style={{ width: "100%" }}
+            >
               <source src={video} type="video/mp4" />
             </video>
           </div>

@@ -14,8 +14,11 @@ import projects from "../img-video/team-builder/projects.png";
 import roles from "../img-video/team-builder/roles.png";
 import react from "../img-video/tieme-ndo/react.png";
 import redux from "../img-video/tieme-ndo/redux.png";
+import hooks from "../img-video/social-icons/react-hooks.png";
 import java from "../img-video/tieme-ndo/java.png";
 import spring from "../img-video/tieme-ndo/spring.png";
+import node from "../img-video/social-icons/node.png";
+import express from "../img-video/social-icons/express.png";
 import postgres from "../img-video/tieme-ndo/postgres.png";
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
@@ -116,7 +119,7 @@ function AboutMe(props) {
                 <Carousel.Item>
                   <img src={tieme} />
                 </Carousel.Item>
-                {/* <Carousel.Item>
+                <Carousel.Item>
                   <img src={search} />
                 </Carousel.Item>
                 <Carousel.Item>
@@ -124,7 +127,7 @@ function AboutMe(props) {
                 </Carousel.Item>
                 <Carousel.Item>
                   <img src={track} />
-                </Carousel.Item> */}
+                </Carousel.Item>
               </Carousel>
               <div className="tech-stack">
                 {/* <h1>Stack</h1> */}
@@ -213,6 +216,52 @@ function AboutMe(props) {
                 </Carousel> */}
             {/* </div>
             </div> */}
+          </div>
+        </div>
+        <div className="main-portfolio-section">
+          <div className="project-one-wrapper">
+            <div className="carousel-wrapper">
+              <Carousel interval={8000}>
+                <Carousel.Item>
+                  <img src={classes} />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={projects} />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img src={roles} />
+                </Carousel.Item>
+              </Carousel>
+              <div className="tech-stack">
+                {/* <h1>Stack</h1> */}
+                <img src={react} />
+                <img src={hooks} />
+                <img src={node} />
+                <img src={express} />
+              </div>
+            </div>
+
+            <div className="project-description">
+              <div className="description">
+                <h1>Team Builder </h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+                  cumque architecto, culpa quo magnam non assumenda rem omnis
+                  aperiam nulla?
+                </p>
+                <div className="links">
+                  <a href="http://github.com/chasegarsee" target="_blank">
+                    <i class="fab fa-git-square " />
+                  </a>
+                  <a
+                    href="https://tiemendo-marketing.netlify.com/"
+                    target="_blank"
+                  >
+                    <i class="fas fa-tv " />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

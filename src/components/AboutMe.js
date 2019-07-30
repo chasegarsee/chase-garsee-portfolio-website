@@ -154,14 +154,22 @@ function AboutMe(props) {
                   deleniti expedita quasi ab, velit cupiditate.
                 </p>
                 <div className="links">
-                  <a href="http://github.com/chasegarsee" target="_blank">
-                    <i class="fab fa-git-square " />
-                  </a>
                   <a
+                    className="links-div"
+                    href="http://github.com/chasegarsee"
+                    target="_blank"
+                  >
+                    <i class="fab fa-git-square " />
+                    <span>View Code</span>
+                  </a>
+
+                  <a
+                    className="links-div"
                     href="https://tiemendo-marketing.netlify.com/"
                     target="_blank"
                   >
                     <i class="fas fa-tv " />
+                    <span>Visit Website</span>
                   </a>
                 </div>
               </div>
@@ -245,19 +253,28 @@ function AboutMe(props) {
               <div className="description">
                 <h1>Team Builder </h1>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
-                  cumque architecto, culpa quo magnam non assumenda rem omnis
-                  aperiam nulla?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  ab voluptate ducimus molestias quam explicabo numquam incidunt
+                  tenetur eius, quidem sint nulla consequuntur unde fugiat iste
+                  possimus distinctio? Sequi, in!
                 </p>
                 <div className="links">
-                  <a href="http://github.com/chasegarsee" target="_blank">
-                    <i class="fab fa-git-square " />
-                  </a>
                   <a
+                    className="links-div"
+                    href="http://github.com/chasegarsee"
+                    target="_blank"
+                  >
+                    <i class="fab fa-git-square " />
+                    <span>View Code</span>
+                  </a>
+
+                  <a
+                    className="links-div"
                     href="https://tiemendo-marketing.netlify.com/"
                     target="_blank"
                   >
                     <i class="fas fa-tv " />
+                    <span>Visit Website</span>
                   </a>
                 </div>
               </div>

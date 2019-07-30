@@ -10,6 +10,11 @@
   margin: 2% 0 2% 2%;
 }
 
+.carousel {
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 30px 10px;
+}
+
 .carousel img {
   border-radius: 7px;
   width: 943px;
@@ -48,6 +53,10 @@
   margin: 2%;
 }
 
+.description {
+  box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 30px 10px;
+}
+
 .description p {
   width: 75%;
   position: relative;
@@ -59,6 +68,18 @@
 }
 .links a {
   font-size: 4rem;
+}
+
+.links-div span {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #545454;
+}
+
+.links-div:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 1450px) {

@@ -106,13 +106,7 @@ function AboutMe(props) {
           </ul>
         </nav>
         <hr />
-        <p>Full Stack Developer with a passion for proper design. </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-          molestias rem provident explicabo alias id, blanditiis dicta deserunt
-          placeat similique at doloremque quisquam, voluptatibus unde voluptate
-          neque culpa tempora ut!
-        </p>
+        <p>Passionate for proper development and design.</p>
 
         <div className="main-portfolio-section">
           <div className="everything">
@@ -231,7 +225,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper">
+            <div className="project-one-wrapper two">
               <div className="project-description">
                 <div className="description">
                   <h1>Team Builder </h1>

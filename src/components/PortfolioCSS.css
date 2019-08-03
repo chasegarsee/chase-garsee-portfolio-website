@@ -1,24 +1,43 @@
-.main-portfolio-section {
+.everything {
+  height: 90vh;
 }
 
 .project-one-wrapper {
   display: flex;
+  align-items: center;
+  height: 800px;
 }
 
 .carousel-wrapper {
   display: flex;
   margin: 2% 0 2% 2%;
+  width: 1500px;
+  height: 500px;
+}
+
+.carousel-wrapper-two {
+  display: flex;
+  margin: 2% 4% 2% 0;
+  width: 1250px;
+  height: 500px;
 }
 
 .carousel {
   border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px 1px;
+  transition: 0.5s ease-in-out;
+}
+
+.carousel:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 30px 10px;
+  transition: 0.5s ease;
 }
 
 .carousel img {
   border-radius: 7px;
   width: 943px;
   max-width: 997px;
+  height: 500px;
 }
 
 .carousel-inner .carousel-item {
@@ -49,15 +68,22 @@
 .project-description {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 1250px;
+  height: 500px;
   margin: 2%;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px 1px;
 }
-
 .description {
+  font-family: "Open Sans Condensed", sans-serif;
+  transition: 0.5s ease-in-out;
+}
+.description:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 30px 10px;
+  transition: 0.5s ease-in-out;
 }
 
 .description p {
+  font-size: 1.3rem;
   width: 75%;
   position: relative;
 }

@@ -61,7 +61,7 @@ function AboutMe(props) {
               mute
               style={{ width: "100%" }}
             >
-              <source src={video} type="video/mp4" />
+              <source src={video} type="video/mp4" autoPlay />
             </video>
           </div>
         </div>
@@ -108,69 +108,72 @@ function AboutMe(props) {
         <hr />
         <p>Full Stack Developer with a passion for proper design. </p>
         <p>
-          I am a graduate from Lambda School. I may not know everything, but I'm
-          dedicated to learn something new every day I'm alive
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          molestias rem provident explicabo alias id, blanditiis dicta deserunt
+          placeat similique at doloremque quisquam, voluptatibus unde voluptate
+          neque culpa tempora ut!
         </p>
 
         <div className="main-portfolio-section">
-          <div className="project-one-wrapper">
-            <div className="carousel-wrapper">
-              <Carousel interval={8000}>
-                <Carousel.Item>
-                  <img src={tieme} />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={search} />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={manage} />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={track} />
-                </Carousel.Item>
-              </Carousel>
-              <div className="tech-stack">
-                {/* <h1>Stack</h1> */}
-                <img src={react} />
-                <img src={redux} />
-                <img src={java} />
-                <img src={spring} />
-                <img src={postgres} />
+          <div className="everything">
+            <div className="project-one-wrapper">
+              <div className="carousel-wrapper">
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img src={tieme} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={search} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={manage} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={track} />
+                  </Carousel.Item>
+                </Carousel>
+                <div className="tech-stack">
+                  <img src={react} />
+                  <img src={redux} />
+                  <img src={java} />
+                  <img src={spring} />
+                  <img src={postgres} />
+                </div>
               </div>
-            </div>
 
-            <div className="project-description">
-              <div className="description">
-                <h1>TIEME NDO CRM </h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Soluta nisi consequuntur recusandae eligendi neque at quod
-                  architecto tenetur debitis aperiam animi iure ipsum officiis
-                  inventore ea, ullam, dolorum veritatis hic sint quibusdam
-                  quidem sequi quas praesentium? Non amet eligendi neque
-                  perspiciatis? Atque aliquam dolorum culpa corporis ipsam id,
-                  rerum illum at? Odit excepturi, cum eum porro ullam nemo in
-                  nulla maxime qui sunt aperiam quibusdam ratione esse tenetur
-                  deleniti expedita quasi ab, velit cupiditate.
-                </p>
-                <div className="links">
-                  <a
-                    className="links-div"
-                    href="http://github.com/chasegarsee"
-                    target="_blank"
-                  >
-                    <i class="fab fa-git-square " />
-                    <span>View Code</span>
-                  </a>
+              <div className="project-description">
+                <div className="description">
+                  <h1>TIEME NDO CRM </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta nisi consequuntur recusandae eligendi neque at quod
+                    architecto tenetur debitis aperiam animi iure ipsum officiis
+                    inventore ea, ullam, dolorum veritatis hic sint quibusdam
+                    quidem sequi quas praesentium? Non amet eligendi neque
+                    perspiciatis? Atque aliquam dolorum culpa corporis ipsam id,
+                    rerum illum at? Odit excepturi, cum eum porro ullam nemo in
+                    nulla maxime qui sunt aperiam quibusdam ratione esse tenetur
+                    deleniti expedita quasi ab, velit cupiditate.
+                  </p>
+                  <div className="links">
+                    <a
+                      className="links-div"
+                      href="http://github.com/chasegarsee"
+                      target="_blank"
+                    >
+                      <i class="fab fa-git-square " />
+                      <span>View Code</span>
+                    </a>
 
-                  <a
-                    className="links-div"
-                    href="https://tiemendo-marketing.netlify.com/"
-                    target="_blank"
-                  >
-                    <i class="fas fa-tv " />
-                    <span>Visit Website</span>
-                  </a>
+                    <a
+                      className="links-div"
+                      href="https://tiemendo-marketing.netlify.com/"
+                      target="_blank"
+                    >
+                      <i class="fas fa-tv " />
+                      <span>Visit Website</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -227,56 +230,56 @@ function AboutMe(props) {
           </div>
         </div>
         <div className="main-portfolio-section">
-          <div className="project-one-wrapper">
-            <div className="carousel-wrapper">
-              <Carousel interval={8000}>
-                <Carousel.Item>
-                  <img src={classes} />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={projects} />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img src={roles} />
-                </Carousel.Item>
-              </Carousel>
-              <div className="tech-stack">
-                {/* <h1>Stack</h1> */}
-                <img src={react} />
-                <img src={hooks} />
-                <img src={node} />
-                <img src={express} />
-              </div>
-            </div>
+          <div className="everything">
+            <div className="project-one-wrapper">
+              <div className="project-description">
+                <div className="description">
+                  <h1>Team Builder </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                    ab voluptate ducimus molestias quam explicabo numquam
+                    incidunt tenetur eius, quidem sint nulla consequuntur unde
+                    fugiat iste possimus distinctio? Sequi, in!
+                  </p>
+                  <div className="links">
+                    <a
+                      className="links-div"
+                      href="http://github.com/chasegarsee"
+                      target="_blank"
+                    >
+                      <i class="fab fa-git-square " />
+                      <span>View Code</span>
+                    </a>
 
-            <div className="project-description">
-              <div className="description">
-                <h1>Team Builder </h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                  ab voluptate ducimus molestias quam explicabo numquam incidunt
-                  tenetur eius, quidem sint nulla consequuntur unde fugiat iste
-                  possimus distinctio? Sequi, in!
-                </p>
-                <div className="links">
-                  <a
-                    className="links-div"
-                    href="http://github.com/chasegarsee"
-                    target="_blank"
-                  >
-                    <i class="fab fa-git-square " />
-                    <span>View Code</span>
-                  </a>
-
-                  <a
-                    className="links-div"
-                    href="https://tiemendo-marketing.netlify.com/"
-                    target="_blank"
-                  >
-                    <i class="fas fa-tv " />
-                    <span>Visit Website</span>
-                  </a>
+                    <a
+                      className="links-div"
+                      href="https://tiemendo-marketing.netlify.com/"
+                      target="_blank"
+                    >
+                      <i class="fas fa-tv " />
+                      <span>Visit Website</span>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div className="carousel-wrapper-two">
+                <div className="tech-stack">
+                  <img src={react} />
+                  <img src={hooks} />
+                  <img src={node} />
+                  <img src={express} />
+                </div>
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img src={classes} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={projects} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={roles} />
+                  </Carousel.Item>
+                </Carousel>
               </div>
             </div>
           </div>

@@ -90,9 +90,17 @@ p {
   }
 }
 
-@media (max-width: 375px) {
-  .section {
+@media (max-width: 415px) {
+  .section img {
+    width: 90vh;
   }
+
+  .video-container {
+    width: 70vh;
+  }
+}
+
+@media (max-width: 375px) {
   .section img {
     width: 90vh;
   }

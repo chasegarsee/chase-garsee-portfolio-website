@@ -1,7 +1,6 @@
 import React, { Component, useState, useRef, useEffect } from "react";
 import video from "../img-video/background4.mp4";
 import logo from "../img-video/logo5.png";
-import overlay1 from "../img-video/b.png";
 import search from "../img-video/tieme-ndo/search.gif";
 import manage from "../img-video/tieme-ndo/manage.gif";
 import track from "../img-video/tieme-ndo/track.png";
@@ -225,7 +224,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper two">
+            <div className="project-one-wrapper project-two ">
               <div className="project-description">
                 <div className="description">
                   <h1>Team Builder </h1>

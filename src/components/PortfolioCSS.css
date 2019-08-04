@@ -260,6 +260,30 @@
   }
 }
 
+@media (max-width: 415px) {
+  .carousel-wrapper {
+    width: 340px;
+    margin: 15px;
+  }
+
+  .carousel-wrapper-two {
+    width: 365px;
+    margin: 50px 15px 15px 15px;
+  }
+  .carousel img {
+    width: 375px;
+    height: 300px;
+  }
+
+  .project-two {
+    height: 350px;
+  }
+
+  .description p {
+    width: 70%;
+  }
+}
+
 @media (max-width: 375px) {
   .carousel-wrapper {
     width: 365px;

@@ -1,24 +1,22 @@
 import React, { Component, useState, useRef, useEffect } from "react";
 import video from "../img-video/background4.mp4";
 import logo from "../img-video/logo5.png";
-import search from "../img-video/tieme-ndo/search.gif";
-import manage from "../img-video/tieme-ndo/manage.gif";
-import track from "../img-video/tieme-ndo/track.png";
+import searchUsers from "../img-video/tieme-ndo/search-users.png";
+import searchFarmers from "../img-video/tieme-ndo/search-farmers.png";
+import manage from "../img-video/tieme-ndo/manage.png";
+import inventory from "../img-video/tieme-ndo/inventory.png";
 import tieme from "../img-video/tieme-ndo/tieme.png";
-import instructor from "../img-video/air-fitness/instructor.png";
-import user from "../img-video/air-fitness/user.png";
-import landing from "../img-video/air-fitness/landing-page.gif";
 import classes from "../img-video/team-builder/classes.png";
 import projects from "../img-video/team-builder/projects.png";
 import roles from "../img-video/team-builder/roles.png";
-import react from "../img-video/tieme-ndo/react.png";
-import redux from "../img-video/tieme-ndo/redux.png";
+import react from "../img-video/social-icons/react.png";
+import redux from "../img-video/social-icons/redux.png";
 import hooks from "../img-video/social-icons/react-hooks.png";
-import java from "../img-video/tieme-ndo/java.png";
-import spring from "../img-video/tieme-ndo/spring.png";
+import java from "../img-video/social-icons/java.png";
+import spring from "../img-video/social-icons/spring.png";
 import node from "../img-video/social-icons/node.png";
 import express from "../img-video/social-icons/express.png";
-import postgres from "../img-video/tieme-ndo/postgres.png";
+import postgres from "../img-video/social-icons/postgres.png";
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
 import "./PortfolioCSS.css";
@@ -116,13 +114,16 @@ function AboutMe(props) {
                     <img src={tieme} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={search} />
+                    <img src={searchUsers} />
                   </Carousel.Item>
                   <Carousel.Item>
                     <img src={manage} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={track} />
+                    <img src={searchFarmers} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={inventory} />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">

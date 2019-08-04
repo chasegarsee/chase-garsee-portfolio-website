@@ -9,6 +9,12 @@ import tieme from "../img-video/tieme-ndo/tieme.png";
 import classes from "../img-video/team-builder/classes.png";
 import projects from "../img-video/team-builder/projects.png";
 import roles from "../img-video/team-builder/roles.png";
+import VOID from "../img-video/the-void/the-void.png";
+import voidLogin from "../img-video/the-void/void-login.png";
+import airFitness from "../img-video/air-fitness/air-fitness.png";
+import createClass from "../img-video/air-fitness/create-classes.png";
+import selectClass from "../img-video/air-fitness/select-classes.png";
+import manageClass from "../img-video/air-fitness/manage-classes.png";
 import react from "../img-video/social-icons/react.png";
 import redux from "../img-video/social-icons/redux.png";
 import hooks from "../img-video/social-icons/react-hooks.png";
@@ -17,6 +23,10 @@ import spring from "../img-video/social-icons/spring.png";
 import node from "../img-video/social-icons/node.png";
 import express from "../img-video/social-icons/express.png";
 import postgres from "../img-video/social-icons/postgres.png";
+import HTML from "../img-video/social-icons/HTML.png";
+import CSS from "../img-video/social-icons/CSS.png";
+import python from "../img-video/social-icons/python.png";
+import django from "../img-video/social-icons/django.png";
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
 import "./PortfolioCSS.css";
@@ -107,7 +117,7 @@ function AboutMe(props) {
 
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper">
+            <div className="project-one-wrapper project-one">
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -152,7 +162,7 @@ function AboutMe(props) {
                   <div className="links">
                     <a
                       className="links-div"
-                      href="http://github.com/chasegarsee"
+                      href="https://github.com/labs13-agriculture"
                       target="_blank"
                     >
                       <i class="fab fa-git-square " />
@@ -171,56 +181,6 @@ function AboutMe(props) {
                 </div>
               </div>
             </div>
-
-            {/* <div className="right-side-decription-wrapper">
-            <div className="project-description-wrapper" />
-
-            
-          </div> */}
-
-            {/* <div className="parallax-wrapper2">
-              <img src={overlay1} />
-              <div className="project-one-wrapper">
-                <h1>Lambda Team Builder</h1>
-                <div className="project-description">
-                  <h3>React + Hooks</h3>
-                  <h3>Node + Express</h3>
-                </div>
-                <Carousel interval={5000}>
-                  <Carousel.Item>
-                    <img src={classes} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={projects} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={roles} />
-                  </Carousel.Item>
-                </Carousel>
-              </div>
-            </div>
-            <div className="parallax-wrapper1">
-              <img src={overlay1} />
-              <div id="middle" className="project-one-wrapper">
-                <h1>Air Fitness</h1>
-                <div className="project-description">
-                  <h3>HTML 5</h3>
-                  <h3>CSS</h3>
-                  <h3>React</h3>
-                </div>
-                <Carousel interval={5000}>
-                  <Carousel.Item>
-                    <img src={landing} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={instructor} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img src={user} />
-                  </Carousel.Item>
-                </Carousel> */}
-            {/* </div>
-            </div> */}
           </div>
         </div>
         <div className="main-portfolio-section">
@@ -238,7 +198,7 @@ function AboutMe(props) {
                   <div className="links">
                     <a
                       className="links-div"
-                      href="http://github.com/chasegarsee"
+                      href="https://github.com/lambda-team-builder"
                       target="_blank"
                     >
                       <i class="fab fa-git-square " />
@@ -247,7 +207,7 @@ function AboutMe(props) {
 
                     <a
                       className="links-div"
-                      href="https://tiemendo-marketing.netlify.com/"
+                      href="https://lambda-team-builder.netlify.com/login"
                       target="_blank"
                     >
                       <i class="fas fa-tv " />
@@ -272,6 +232,122 @@ function AboutMe(props) {
                   </Carousel.Item>
                   <Carousel.Item>
                     <img src={roles} />
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="main-portfolio-section">
+          <div className="everything">
+            <div className="project-one-wrapper project-one">
+              <div className="carousel-wrapper">
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img src={voidLogin} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={VOID} />
+                  </Carousel.Item>
+                </Carousel>
+                <div className="tech-stack">
+                  <img src={react} />
+                  <img src={hooks} />
+                  <img src={python} />
+                  <img src={django} />
+                </div>
+              </div>
+
+              <div className="project-description">
+                <div className="description">
+                  <h1>The Void </h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Soluta nisi consequuntur recusandae eligendi neque at quod
+                    architecto tenetur debitis aperiam animi iure ipsum officiis
+                    inventore ea, ullam, dolorum veritatis hic sint quibusdam
+                    quidem sequi quas praesentium? Non amet eligendi neque
+                    perspiciatis? Atque aliquam dolorum culpa corporis ipsam id,
+                    rerum illum at? Odit excepturi, cum eum porro ullam nemo in
+                    nulla maxime qui sunt aperiam quibusdam ratione esse tenetur
+                    deleniti expedita quasi ab, velit cupiditate.
+                  </p>
+                  <div className="links">
+                    <a
+                      className="links-div"
+                      href="https://github.com/cs-build-week1-good-dev"
+                      target="_blank"
+                    >
+                      <i class="fab fa-git-square " />
+                      <span>View Code</span>
+                    </a>
+
+                    <a
+                      className="links-div"
+                      href="https://agitated-curran-1cd505.netlify.com/login"
+                      target="_blank"
+                    >
+                      <i class="fas fa-tv " />
+                      <span>Visit Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="main-portfolio-section">
+          <div className="everything">
+            <div className="project-one-wrapper project-two ">
+              <div className="project-description">
+                <div className="description">
+                  <h1>Air Fitness</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                    ab voluptate ducimus molestias quam explicabo numquam
+                    incidunt tenetur eius, quidem sint nulla consequuntur unde
+                    fugiat iste possimus distinctio? Sequi, in!
+                  </p>
+                  <div className="links">
+                    <a
+                      className="links-div"
+                      href="https://github.com/airfitness"
+                      target="_blank"
+                    >
+                      <i class="fab fa-git-square " />
+                      <span>View Code</span>
+                    </a>
+
+                    <a
+                      className="links-div"
+                      href="https://airfitness.netlify.com"
+                      target="_blank"
+                    >
+                      <i class="fas fa-tv " />
+                      <span>Visit Website</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-wrapper-two">
+                <div className="tech-stack">
+                  <img src={react} />
+                  <img src={redux} />
+                  <img src={HTML} />
+                  <img src={CSS} />
+                </div>
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img src={airFitness} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={createClass} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={selectClass} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img src={manageClass} />
                   </Carousel.Item>
                 </Carousel>
               </div>

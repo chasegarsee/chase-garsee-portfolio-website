@@ -262,17 +262,17 @@
 
 @media (max-width: 415px) {
   .main-section {
-    width: 400px;
+    width: 415px;
   }
   .main-portfolio-section {
-    width: 400px;
+    width: 415px;
   }
   .everything {
-    width: 400px;
+    width: 415px;
     margin: 0;
   }
   .project-one-wrapper {
-    width: 400px;
+    width: 415px;
     margin: 0;
   }
   .carousel-wrapper {
@@ -290,7 +290,8 @@
   }
 
   .project-two {
-    height: 350px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    flex-direction: column-reverse;
   }
 
   .project-description {

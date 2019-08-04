@@ -261,6 +261,20 @@
 }
 
 @media (max-width: 415px) {
+  .main-section {
+    width: 400px;
+  }
+  .main-portfolio-section {
+    width: 400px;
+  }
+  .everything {
+    width: 400px;
+    margin: 0;
+  }
+  .project-one-wrapper {
+    width: 400px;
+    margin: 0;
+  }
   .carousel-wrapper {
     width: 340px;
     margin: 15px;
@@ -279,6 +293,9 @@
     height: 350px;
   }
 
+  .project-description {
+    margin: 20px 0 !important;
+  }
   .description p {
     width: 70%;
   }

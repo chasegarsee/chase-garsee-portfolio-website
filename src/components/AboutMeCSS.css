@@ -92,17 +92,24 @@ p {
 
 @media (max-width: 415px) {
   .section img {
-    width: 90vh;
+    width: 500px;
   }
 
   .video-container {
-    width: 70vh;
+    width: 400px;
+  }
+
+  .section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
   }
 }
 
 @media (max-width: 375px) {
   .section img {
-    width: 90vh;
+    width: 100vh;
   }
 
   .video-container {

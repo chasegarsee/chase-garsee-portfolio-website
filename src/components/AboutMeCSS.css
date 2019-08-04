@@ -89,3 +89,15 @@ p {
     color: #545454;
   }
 }
+
+@media (max-width: 375px) {
+  .section {
+  }
+  .section img {
+    width: 90vh;
+  }
+
+  .video-container {
+    width: 70vh;
+  }
+}

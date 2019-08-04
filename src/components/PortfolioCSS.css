@@ -259,3 +259,23 @@
     width: 70%;
   }
 }
+
+@media (max-width: 375px) {
+  .carousel-wrapper {
+    width: 365px;
+    margin: 15px;
+  }
+
+  .carousel-wrapper-two {
+    width: 365px;
+    margin: 100px 15px 15px 15px;
+  }
+  .carousel img {
+    width: 375px;
+    height: 300px;
+  }
+
+  .description p {
+    width: 70%;
+  }
+}

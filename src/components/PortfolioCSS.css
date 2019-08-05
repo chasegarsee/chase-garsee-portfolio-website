@@ -30,7 +30,9 @@
   height: 500px;
 }
 
-.project-two {
+.carousel.slide {
+  width: 1000px;
+  border-radius: 7px;
 }
 
 .carousel-wrapper-two {
@@ -52,7 +54,6 @@
 .carousel img {
   border-radius: 7px;
   width: 943px;
-  max-width: 997px;
   height: 500px;
 }
 

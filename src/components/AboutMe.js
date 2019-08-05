@@ -68,7 +68,7 @@ function AboutMe(props) {
               mute
               style={{ width: "100%" }}
             >
-              <source src={video} type="video/mp4" autoPlay />
+              <source src={video} type="video/mp4" autoPlay loop mute />
             </video>
           </div>
         </div>

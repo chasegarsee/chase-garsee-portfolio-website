@@ -190,10 +190,9 @@ function AboutMe(props) {
                 <div className="description">
                   <h1>Team Builder </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    ab voluptate ducimus molestias quam explicabo numquam
-                    incidunt tenetur eius, quidem sint nulla consequuntur unde
-                    fugiat iste possimus distinctio? Sequi, in!
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Odio ab quas eos quaerat fugiat eum autem voluptatem quidem
+                    nostrum inventore.
                   </p>
                   <div className="links">
                     <a

@@ -63,9 +63,9 @@ function AboutMe(props) {
           <div className="video-container">
             <video
               className="video-background"
-              playsinline
+              playsInLine
               loop
-              autoplay
+              autoPlay
               style={{ width: "100%" }}
             >
               <source src={video} type="video/mp4" autoPlay loop />

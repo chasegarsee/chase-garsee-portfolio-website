@@ -104,7 +104,7 @@ function AboutMe(props) {
             <li className="mail">
               <a
                 style={social}
-                href="mailto:chasegarsee@gmail.com.com"
+                href="mailto:chasegarsee@gmail.com"
                 target="_blank"
               >
                 <i class="far fa-envelope fa-2x" />

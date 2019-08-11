@@ -108,6 +108,25 @@ p {
 }
 
 @media (max-width: 375px) {
+  .main-section {
+    width: 100vw;
+  }
+
+  .main-portfolio-section,
+  .everything,
+  .project-one-wrapper {
+    width: 100vw;
+  }
+
+  .carousel-wrapper-two {
+    height: 100%;
+    margin: 15px;
+  }
+
+  .everything {
+    height: auto;
+  }
+
   .section img {
     width: 100vh;
   }

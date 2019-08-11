@@ -1,4 +1,4 @@
-import React, { Component, useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import video from "../img-video/background4.mp4";
 import logo from "../img-video/logo5.png";
 import searchUsers from "../img-video/tieme-ndo/search-users.png";
@@ -59,55 +59,41 @@ function AboutMe(props) {
     <div className="main-section">
       <div className="about-me-section">
         <div className="section">
-          <img src={logo} />
+          <img alt="" src={logo} />
           <div className="video-container">
             <video
               className="video-background"
               loop
               autoPlay
-              mute
               style={{ width: "100%" }}
             >
-              <source src={video} type="video/mp4" autoPlay loop mute />
+              <source src={video} type="video/mp4" autoPlay loop />
             </video>
           </div>
         </div>
         <nav style={style}>
           <ul>
             <li className="twitter">
-              <a
-                style={social}
-                href="http://twitter.com/chasegarsee"
-                target="_blank"
-              >
-                <i class="fab fa-twitter fa-2x" />
+              <a style={social} href="http://twitter.com/chasegarsee">
+                <i className="fab fa-twitter fa-2x" />
               </a>
             </li>
             <li className="github">
-              <a
-                style={social}
-                href="http://github.com/chasegarsee"
-                target="_blank"
-              >
-                <i class="fab fa-github fa-2x" />
+              <a style={social} href="http://github.com/chasegarsee">
+                <i className="fab fa-github fa-2x" />
               </a>
             </li>
             <li className="linkedin">
               <a
                 style={social}
                 href="https://www.linkedin.com/in/chase-garsee-7b11a4105/"
-                target="_blank"
               >
-                <i class="fab fa-linkedin fa-2x" />
+                <i className="fab fa-linkedin fa-2x" />
               </a>
             </li>
             <li className="mail">
-              <a
-                style={social}
-                href="mailto:chasegarsee@gmail.com"
-                target="_blank"
-              >
-                <i class="far fa-envelope fa-2x" />
+              <a style={social} href="mailto:chasegarsee@gmail.com">
+                <i className="far fa-envelope fa-2x" />
               </a>
             </li>
           </ul>
@@ -121,27 +107,27 @@ function AboutMe(props) {
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img src={tieme} />
+                    <img alt="" src={tieme} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={searchUsers} />
+                    <img alt="" src={searchUsers} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={manage} />
+                    <img alt="" src={manage} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={searchFarmers} />
+                    <img alt="" src={searchFarmers} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={inventory} />
+                    <img alt="" src={inventory} />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">
-                  <img src={react} />
-                  <img src={redux} />
-                  <img src={java} />
-                  <img src={spring} />
-                  <img src={postgres} />
+                  <img alt="" src={react} />
+                  <img alt="" src={redux} />
+                  <img alt="" src={java} />
+                  <img alt="" src={spring} />
+                  <img alt="" src={postgres} />
                 </div>
               </div>
 
@@ -163,18 +149,16 @@ function AboutMe(props) {
                     <a
                       className="links-div"
                       href="https://github.com/labs13-agriculture"
-                      target="_blank"
                     >
-                      <i class="fab fa-git-square " />
+                      <i className="fab fa-git-square " />
                       <span>View Code</span>
                     </a>
 
                     <a
                       className="links-div"
                       href="https://tiemendo-marketing.netlify.com/"
-                      target="_blank"
                     >
-                      <i class="fas fa-tv " />
+                      <i className="fas fa-tv " />
                       <span>Visit Website</span>
                     </a>
                   </div>
@@ -198,18 +182,16 @@ function AboutMe(props) {
                     <a
                       className="links-div"
                       href="https://github.com/lambda-team-builder"
-                      target="_blank"
                     >
-                      <i class="fab fa-git-square " />
+                      <i className="fab fa-git-square " />
                       <span>View Code</span>
                     </a>
 
                     <a
                       className="links-div"
                       href="https://lambda-team-builder.netlify.com/login"
-                      target="_blank"
                     >
-                      <i class="fas fa-tv " />
+                      <i className="fas fa-tv " />
                       <span>Visit Website</span>
                     </a>
                   </div>
@@ -217,20 +199,20 @@ function AboutMe(props) {
               </div>
               <div className="carousel-wrapper-two">
                 <div className="tech-stack">
-                  <img src={react} />
-                  <img src={hooks} />
-                  <img src={node} />
-                  <img src={express} />
+                  <img alt="" src={react} />
+                  <img alt="" src={hooks} />
+                  <img alt="" src={node} />
+                  <img alt="" src={express} />
                 </div>
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img src={classes} />
+                    <img alt="" src={classes} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={projects} />
+                    <img alt="" src={projects} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={roles} />
+                    <img alt="" src={roles} />
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -243,17 +225,17 @@ function AboutMe(props) {
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img src={voidLogin} />
+                    <img alt="" src={voidLogin} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={VOID} />
+                    <img alt="" src={VOID} />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">
-                  <img src={react} />
-                  <img src={hooks} />
-                  <img src={python} />
-                  <img src={django} />
+                  <img alt="" src={react} />
+                  <img alt="" src={hooks} />
+                  <img alt="" src={python} />
+                  <img alt="" src={django} />
                 </div>
               </div>
 
@@ -275,18 +257,16 @@ function AboutMe(props) {
                     <a
                       className="links-div"
                       href="https://github.com/cs-build-week1-good-dev"
-                      target="_blank"
                     >
-                      <i class="fab fa-git-square " />
+                      <i className="fab fa-git-square " />
                       <span>View Code</span>
                     </a>
 
                     <a
                       className="links-div"
                       href="https://agitated-curran-1cd505.netlify.com/login"
-                      target="_blank"
                     >
-                      <i class="fas fa-tv " />
+                      <i className="fas fa-tv " />
                       <span>Visit Website</span>
                     </a>
                   </div>
@@ -311,18 +291,16 @@ function AboutMe(props) {
                     <a
                       className="links-div"
                       href="https://github.com/airfitness"
-                      target="_blank"
                     >
-                      <i class="fab fa-git-square " />
+                      <i className="fab fa-git-square " />
                       <span>View Code</span>
                     </a>
 
                     <a
                       className="links-div"
                       href="https://airfitness.netlify.com"
-                      target="_blank"
                     >
-                      <i class="fas fa-tv " />
+                      <i className="fas fa-tv " />
                       <span>Visit Website</span>
                     </a>
                   </div>
@@ -330,23 +308,23 @@ function AboutMe(props) {
               </div>
               <div className="carousel-wrapper-two">
                 <div className="tech-stack">
-                  <img src={react} />
-                  <img src={redux} />
-                  <img src={HTML} />
-                  <img src={CSS} />
+                  <img alt="" src={react} />
+                  <img alt="" src={redux} />
+                  <img alt="" src={HTML} />
+                  <img alt="" src={CSS} />
                 </div>
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img src={airFitness} />
+                    <img alt="" src={airFitness} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={createClass} />
+                    <img alt="" src={createClass} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={selectClass} />
+                    <img alt="" src={selectClass} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img src={manageClass} />
+                    <img alt="" src={manageClass} />
                   </Carousel.Item>
                 </Carousel>
               </div>

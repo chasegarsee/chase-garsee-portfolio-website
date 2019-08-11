@@ -273,6 +273,10 @@
     width: 600px;
   }
 
+  .everything {
+    height: auto;
+  }
+
   .carousel-wrapper-two {
     width: 600px;
   }
@@ -350,15 +354,18 @@
   .project-one-wrapper {
     width: 415px;
     margin-top: 15px;
+    height: auto;
   }
   .carousel-wrapper {
     width: 340px;
     margin: 15px;
+    height: auto;
   }
 
   .carousel-wrapper-two {
     width: 365px;
     margin: 0 15px 15px 15px;
+    height: auto;
   }
   .carousel img {
     width: 375px;

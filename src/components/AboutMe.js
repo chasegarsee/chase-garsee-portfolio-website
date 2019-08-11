@@ -66,6 +66,7 @@ function AboutMe(props) {
               playsInLine
               loop
               autoPlay
+              muted
               style={{ width: "100%" }}
             >
               <source src={video} type="video/mp4" autoPlay loop />

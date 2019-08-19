@@ -5,7 +5,7 @@ import AboutMe from "./components/AboutMe";
 function App() {
   return (
     <div className="App">
-      <AboutMe />
+      <AboutMe href="http://chasegarsee.com" />
     </div>
   );
 }

@@ -137,15 +137,12 @@ function AboutMe(props) {
                 <div className="description">
                   <h1>TIEME NDO CRM </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta nisi consequuntur recusandae eligendi neque at quod
-                    architecto tenetur debitis aperiam animi iure ipsum officiis
-                    inventore ea, ullam, dolorum veritatis hic sint quibusdam
-                    quidem sequi quas praesentium? Non amet eligendi neque
-                    perspiciatis? Atque aliquam dolorum culpa corporis ipsam id,
-                    rerum illum at? Odit excepturi, cum eum porro ullam nemo in
-                    nulla maxime qui sunt aperiam quibusdam ratione esse tenetur
-                    deleniti expedita quasi ab, velit cupiditate.
+                    Beautifully simple tools made for Tieme Ndo to improve the
+                    productivity of both their organization and clients. The
+                    Tieme Ndo CRM was designed to make managing all parts of the
+                    company & client relationship as easy as possible.
+                    Minimalism, performance, and ease of use are carefully woven
+                    into each feature of the product.
                   </p>
                   <div className="links">
                     <a
@@ -176,9 +173,16 @@ function AboutMe(props) {
                 <div className="description">
                   <h1>Team Builder </h1>
                   <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Odio ab quas eos quaerat fugiat eum autem voluptatem quidem
-                    nostrum inventore.
+                    Managing hundreds of student projects week in and week out
+                    for Build weeks gets a bit daunting! Team Builder helps with
+                    product ideation and project curation. As an administrator
+                    you can log into the app and see a list of products in a
+                    grid format so that you can visualize all products for a
+                    build week. You can create a new product with the fields
+                    Product Name & Product Description, so that you can create a
+                    new project for students to join. You can add an enumerable
+                    amount of roles to a product idea and let users sign up to a
+                    role they want to handle.
                   </p>
                   <div className="links">
                     <a
@@ -245,15 +249,14 @@ function AboutMe(props) {
                 <div className="description">
                   <h1>The Void </h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Soluta nisi consequuntur recusandae eligendi neque at quod
-                    architecto tenetur debitis aperiam animi iure ipsum officiis
-                    inventore ea, ullam, dolorum veritatis hic sint quibusdam
-                    quidem sequi quas praesentium? Non amet eligendi neque
-                    perspiciatis? Atque aliquam dolorum culpa corporis ipsam id,
-                    rerum illum at? Odit excepturi, cum eum porro ullam nemo in
-                    nulla maxime qui sunt aperiam quibusdam ratione esse tenetur
-                    deleniti expedita quasi ab, velit cupiditate.
+                    Void dungeon is a multi-user dungeon that allows you to
+                    explore and interact with other users in the game. With an
+                    inherited back-end framed out with Python and Django, our
+                    team of 5 developers had 4 days to complete to this project.
+                    Our goal was to build algorithms to efficiently create and
+                    render a dynamic world. We also had a stretch goal of
+                    implementing a chat feature using the web sockets library
+                    Pusher which we were able to achieve.
                   </p>
                   <div className="links">
                     <a
@@ -284,10 +287,11 @@ function AboutMe(props) {
                 <div className="description">
                   <h1>Air Fitness</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                    ab voluptate ducimus molestias quam explicabo numquam
-                    incidunt tenetur eius, quidem sint nulla consequuntur unde
-                    fugiat iste possimus distinctio? Sequi, in!
+                    Today, fitness happens everywhere - a park, an unfinished
+                    basement, a garage gym, etc.- not just gyms. Certified
+                    fitness instructors need an app that takes the awkwardness
+                    out of collecting payments from friends and taking
+                    attendance. This is exactly what AirFitness accomplishes
                   </p>
                   <div className="links">
                     <a

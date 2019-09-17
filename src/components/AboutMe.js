@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import video from "../img-video/background4.mp4";
 import logo from "../img-video/logo5.png";
+import axisCareDemo from "../img-video/axiscare/AxisCareDemo.gif";
+import caregiverSetup from "../img-video/axiscare/caregiver-setup.png";
+import darkMode from "../img-video/axiscare/dark-mode.png";
+import sideBarNavigation from "../img-video/axiscare/side-bar-navigation.png";
 import searchUsers from "../img-video/tieme-ndo/search-users.png";
 import searchFarmers from "../img-video/tieme-ndo/search-farmers.png";
 import manage from "../img-video/tieme-ndo/manage.png";
@@ -106,6 +110,42 @@ function AboutMe(props) {
         <div className="main-portfolio-section">
           <div className="everything">
             <div className="project-one-wrapper project-one">
+              <div className="project-description">
+                <div className="description">
+                  <h1>AxisCare Home Care System Preferences</h1>
+                  <p>
+                    I created a brand new system preferences portion of
+                    AxisCare's CRM from scratch using React. I implemented the
+                    ability to toggle Dark Mode that persists throughout the
+                    application's components. I was able to utilize the DOM to
+                    handle outside component clicks to minimize unused sidebar
+                    navigation.
+                  </p>
+                  <div className="links">
+                    <p>(Proprietary Content)</p>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-wrapper-two">
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img alt="" src={caregiverSetup} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={darkMode} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={sideBarNavigation} />
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="main-portfolio-section">
+          <div className="everything">
+            <div className="project-one-wrapper project-two">
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -168,7 +208,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two ">
+            <div className="project-one-wrapper project-one">
               <div className="project-description">
                 <div className="description">
                   <h1>Team Builder </h1>
@@ -227,7 +267,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one">
+            <div className="project-one-wrapper project-two">
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -282,7 +322,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two ">
+            <div className="project-one-wrapper project-one ">
               <div className="project-description">
                 <div className="description">
                   <h1>Air Fitness</h1>

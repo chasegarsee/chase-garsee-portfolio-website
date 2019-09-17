@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import video from "../img-video/background4.mp4";
 import logo from "../img-video/logo5.png";
-import axisCareDemo from "../img-video/axiscare/AxisCareDemo.gif";
 import caregiverSetup from "../img-video/axiscare/caregiver-setup.png";
 import darkMode from "../img-video/axiscare/dark-mode.png";
 import sideBarNavigation from "../img-video/axiscare/side-bar-navigation.png";
@@ -67,7 +66,7 @@ function AboutMe(props) {
           <div className="video-container">
             <video
               className="video-background"
-              playsInLine
+              playsInline
               loop
               autoPlay
               muted
@@ -127,6 +126,9 @@ function AboutMe(props) {
                 </div>
               </div>
               <div className="carousel-wrapper-two">
+                <div className="tech-stack">
+                  <img alt="" src={null} />
+                </div>
                 <Carousel interval={8000}>
                   <Carousel.Item>
                     <img alt="" src={caregiverSetup} />

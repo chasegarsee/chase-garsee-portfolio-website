@@ -1,6 +1,9 @@
 .everything {
   height: 90vh;
 }
+a:hover {
+  text-decoration: none;
+}
 
 .project-one-wrapper {
   display: flex;

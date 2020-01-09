@@ -134,7 +134,14 @@ function AboutMe(props) {
         </nav>
         <hr />
         <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
-          Passionate for proper development and design.
+          I'm Chase Garsee. I am a{" "}
+          <a href="https://github.com/chasegarsee">software engineer</a>,
+          husband and father, fitness enthusiast, and a stock market investor. I
+          have a degree in Audio Engineering and Production, and I graduated
+          from Lambda School, coding academy. I am a student of life passionate
+          for growth, helping others achieve their wildest dreams, learning new
+          things, and networking with people from all walks of life. Let's{" "}
+          <a href="mailto:chasegarsee@gmail.com">talk</a>!
         </p>
 
         <div className="main-portfolio-section">

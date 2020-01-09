@@ -63,7 +63,7 @@ i.so-dark {
 
 .dark-video {
   transition: 0.2s;
-  filter: brightness(500%);
+  filter: brightness(300%);
 }
 
 .video-container {

@@ -9,6 +9,52 @@
   margin: 4% auto 2% auto;
 }
 
+.toggle {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  z-index: 1;
+  margin: 0 10% 0 auto;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  height: 70px;
+  width: 55px;
+  opacity: 0.8;
+  cursor: pointer;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  box-shadow: rgba(177, 57, 57, 0.42) 8px 10px 37px -14px;
+  background: black;
+  transition: 0.5s;
+}
+
+.toggle:hover {
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.42) 8px 10px 55px -14px;
+  background: rgb(21, 21, 21);
+}
+#not-so-dark {
+  color: white;
+}
+#so-dark {
+  text-shadow: 0px 2px 9px rgb(0, 217, 255);
+}
+
+i.so-dark {
+  text-shadow: 0px 2px 9px rgb(0, 217, 255);
+}
+
+.not-so-dark {
+  color: #282c34;
+}
+
+.so-dark {
+  color: white;
+}
+
 .section img {
   width: 50%;
   z-index: 1;
@@ -59,6 +105,7 @@ li {
 }
 
 .fa-github:hover {
+  text-shadow: none;
   color: rgb(116, 0, 199);
   transition: 250ms;
 }
@@ -66,6 +113,7 @@ li {
 .fa-twitter:hover,
 .fa-linkedin:hover,
 .fa-envelope:hover {
+  text-shadow: none;
   color: rgb(0, 145, 255);
   transition: 250ms;
 }

@@ -9,8 +9,8 @@
 }
 
 .project-one {
-  background-color: #cddcdc;
-  background-image: radial-gradient(
+  background-color: rgba(84, 84, 84, 0.41);
+  /* background-image: radial-gradient(
       at 50% 100%,
       rgba(255, 255, 255, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
@@ -19,7 +19,7 @@
       to bottom,
       rgba(255, 255, 255, 0.25) 0%,
       rgba(0, 0, 0, 0.25) 100%
-    );
+    ); */
   background-blend-mode: screen, overlay;
 }
 
@@ -95,7 +95,6 @@
 }
 .description {
   font-family: "Open Sans Condensed", sans-serif;
-  transition: 0.5s ease-in-out;
 }
 
 .description p {
@@ -112,12 +111,19 @@
   font-size: 4rem;
 }
 
+.not-so-dark {
+  color: #282c34;
+}
+
+.so-dark {
+  color: white;
+}
+
 .links-div span {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   font-size: 1rem;
-  color: #545454;
 }
 
 .links-div:hover {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import video from "../img-video/background4.mp4";
+import video from "./assets/background4.mp4";
 import logo from "../img-video/logo5.png";
+import logoDark from "../img-video/logo5Dark.png";
 import caregiverSetup from "../img-video/axiscare/caregiver-setup.png";
 import darkMode from "../img-video/axiscare/dark-mode.png";
 import sideBarNavigation from "../img-video/axiscare/side-bar-navigation.png";
@@ -60,9 +61,21 @@ function AboutMe(props) {
   };
   return (
     <div className="main-section">
+      <div
+        onClick={props.toggleDarkMode}
+        className={props.darkMode ? "toggle toggled" : "toggle"}
+      >
+        <div className={props.darkMode ? "click clicked" : "click"}>
+          {props.darkMode ? (
+            <i className="fas fa-power-off fa-2x" id="so-dark" />
+          ) : (
+            <i className="fas fa-power-off fa-2x" id="not-so-dark" />
+          )}
+        </div>
+      </div>
       <div className="about-me-section">
         <div className="section">
-          <img alt="" src={logo} />
+          <img alt="" src={props.darkMode ? logoDark : logo} />
           <div className="video-container">
             <video
               className="video-background"
@@ -80,12 +93,20 @@ function AboutMe(props) {
           <ul>
             <li className="twitter">
               <a style={social} href="http://twitter.com/chasegarsee">
-                <i className="fab fa-twitter fa-2x" />
+                {props.darkMode ? (
+                  <i className="so-dark fab fa-twitter fa-2x" />
+                ) : (
+                  <i className="not-so-dark fab fa-twitter fa-2x" />
+                )}
               </a>
             </li>
             <li className="github">
               <a style={social} href="http://github.com/chasegarsee">
-                <i className="fab fa-github fa-2x" />
+                {props.darkMode ? (
+                  <i className="so-dark fab fa-github fa-2x" />
+                ) : (
+                  <i className="not-so-dark fab fa-github fa-2x" />
+                )}
               </a>
             </li>
             <li className="linkedin">
@@ -93,18 +114,28 @@ function AboutMe(props) {
                 style={social}
                 href="https://www.linkedin.com/in/chase-garsee-7b11a4105/"
               >
-                <i className="fab fa-linkedin fa-2x" />
+                {props.darkMode ? (
+                  <i className="so-dark fab fa-linkedin fa-2x" />
+                ) : (
+                  <i className="not-so-dark fab fa-linkedin fa-2x" />
+                )}
               </a>
             </li>
             <li className="mail">
               <a style={social} href="mailto:chasegarsee@gmail.com">
-                <i className="far fa-envelope fa-2x" />
+                {props.darkMode ? (
+                  <i className="so-dark fas fa-envelope fa-2x" />
+                ) : (
+                  <i className="not-so-dark fas fa-envelope fa-2x" />
+                )}
               </a>
             </li>
           </ul>
         </nav>
         <hr />
-        <p>Passionate for proper development and design.</p>
+        <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+          Passionate for proper development and design.
+        </p>
 
         <div className="main-portfolio-section">
           <div className="everything">
@@ -112,7 +143,7 @@ function AboutMe(props) {
               <div className="project-description">
                 <div className="description">
                   <h1>AxisCare Home Care System Preferences</h1>
-                  <p>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
                     I created a brand new system preferences portion of
                     AxisCare's CRM from scratch using React. I implemented the
                     ability to toggle Dark Mode that persists throughout the
@@ -121,7 +152,9 @@ function AboutMe(props) {
                     navigation.
                   </p>
                   <div className="links">
-                    <p>(Proprietary Content)</p>
+                    <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+                      (Proprietary Content)
+                    </p>
                   </div>
                 </div>
               </div>
@@ -178,7 +211,7 @@ function AboutMe(props) {
               <div className="project-description">
                 <div className="description">
                   <h1>TIEME NDO CRM </h1>
-                  <p>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
                     Beautifully simple tools made for Tieme Ndo to improve the
                     productivity of both their organization and clients. The
                     Tieme Ndo CRM was designed to make managing all parts of the
@@ -192,7 +225,11 @@ function AboutMe(props) {
                       href="https://github.com/labs13-agriculture"
                     >
                       <i className="fab fa-git-square " />
-                      <span>View Code</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
                     </a>
 
                     <a
@@ -200,7 +237,11 @@ function AboutMe(props) {
                       href="https://tiemendo-marketing.netlify.com/"
                     >
                       <i className="fas fa-tv " />
-                      <span>Visit Website</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        Visit Website
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -214,7 +255,7 @@ function AboutMe(props) {
               <div className="project-description">
                 <div className="description">
                   <h1>Team Builder </h1>
-                  <p>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
                     Managing hundreds of student projects week in and week out
                     for Build weeks gets a bit daunting! Team Builder helps with
                     product ideation and project curation. As an administrator
@@ -232,7 +273,11 @@ function AboutMe(props) {
                       href="https://github.com/lambda-team-builder"
                     >
                       <i className="fab fa-git-square " />
-                      <span>View Code</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
                     </a>
 
                     <a
@@ -240,7 +285,11 @@ function AboutMe(props) {
                       href="https://lambda-team-builder.netlify.com/login"
                     >
                       <i className="fas fa-tv " />
-                      <span>Visit Website</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        Visit Website
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -290,7 +339,7 @@ function AboutMe(props) {
               <div className="project-description">
                 <div className="description">
                   <h1>The Void </h1>
-                  <p>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
                     Void dungeon is a multi-user dungeon that allows you to
                     explore and interact with other users in the game. With an
                     inherited back-end framed out with Python and Django, our
@@ -306,7 +355,11 @@ function AboutMe(props) {
                       href="https://github.com/cs-build-week1-good-dev"
                     >
                       <i className="fab fa-git-square " />
-                      <span>View Code</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
                     </a>
 
                     <a
@@ -314,7 +367,11 @@ function AboutMe(props) {
                       href="https://agitated-curran-1cd505.netlify.com/login"
                     >
                       <i className="fas fa-tv " />
-                      <span>Visit Website</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        Visit Website
+                      </span>
                     </a>
                   </div>
                 </div>
@@ -328,7 +385,7 @@ function AboutMe(props) {
               <div className="project-description">
                 <div className="description">
                   <h1>Air Fitness</h1>
-                  <p>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
                     Today, fitness happens everywhere - a park, an unfinished
                     basement, a garage gym, etc.- not just gyms. Certified
                     fitness instructors need an app that takes the awkwardness
@@ -341,7 +398,11 @@ function AboutMe(props) {
                       href="https://github.com/airfitness"
                     >
                       <i className="fab fa-git-square " />
-                      <span>View Code</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
                     </a>
 
                     <a
@@ -349,7 +410,11 @@ function AboutMe(props) {
                       href="https://airfitness.netlify.com"
                     >
                       <i className="fas fa-tv " />
-                      <span>Visit Website</span>
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        Visit Website
+                      </span>
                     </a>
                   </div>
                 </div>

@@ -61,6 +61,11 @@ i.so-dark {
   padding: 0.2%;
 }
 
+.dark-video {
+  transition: 0.2s;
+  filter: brightness(500%);
+}
+
 .video-container {
   display: flex;
   justify-content: center;

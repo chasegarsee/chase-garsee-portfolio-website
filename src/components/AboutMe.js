@@ -75,19 +75,50 @@ function AboutMe(props) {
       </div>
       <div className="about-me-section">
         <div className="section">
-          <img alt="" src={props.darkMode ? logoDark : logo} />
-          <div className="video-container">
-            <video
-              className="video-background"
-              playsInline
-              loop
-              autoPlay
-              muted
-              style={{ width: "100%" }}
-            >
-              <source src={video} type="video/mp4" autoPlay loop />
-            </video>
-          </div>
+          <img
+            alt=""
+            src={props.darkMode ? logoDark : logo}
+            className={props.darkMode ? "dark-mode" : ""}
+          />
+          {!props.darkMode ? (
+            <div className="video-container">
+              <video
+                className="video-background"
+                playsInline
+                loop
+                autoPlay
+                muted
+                style={{ width: "100%" }}
+              >
+                <source
+                  style={{ zIndex: "1" }}
+                  src={video}
+                  type="video/mp4"
+                  autoPlay
+                  loop
+                />
+              </video>
+            </div>
+          ) : (
+            <div className="video-container dark-video">
+              <video
+                className="video-background"
+                playsInline
+                loop
+                autoPlay
+                muted
+                style={{ width: "100%" }}
+              >
+                <source
+                  style={{ zIndex: "1" }}
+                  src={video}
+                  type="video/mp4"
+                  autoPlay
+                  loop
+                />
+              </video>
+            </div>
+          )}
         </div>
         <nav style={style}>
           <ul>

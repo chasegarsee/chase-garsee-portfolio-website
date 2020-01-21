@@ -19,6 +19,9 @@ import airFitness from "../img-video/air-fitness/air-fitness.png";
 import createClass from "../img-video/air-fitness/create-classes.png";
 import selectClass from "../img-video/air-fitness/select-classes.png";
 import manageClass from "../img-video/air-fitness/manage-classes.png";
+import cities from "../img-video/your-tour/cities.png";
+import packages from "../img-video/your-tour/packages.png";
+import stripe from "../img-video/your-tour/stripe.png";
 import react from "../img-video/social-icons/react.png";
 import redux from "../img-video/social-icons/redux.png";
 import hooks from "../img-video/social-icons/react-hooks.png";
@@ -31,6 +34,8 @@ import HTML from "../img-video/social-icons/HTML.png";
 import CSS from "../img-video/social-icons/CSS.png";
 import python from "../img-video/social-icons/python.png";
 import django from "../img-video/social-icons/django.png";
+import firebase from "../img-video/social-icons/firebase.png";
+import stripeLogo from "../img-video/social-icons/stripe.png";
 import useWindowScrollPosition from "@rehooks/window-scroll-position";
 
 import "./PortfolioCSS.css";
@@ -178,6 +183,58 @@ function AboutMe(props) {
         <div className="main-portfolio-section">
           <div className="everything">
             <div className="project-one-wrapper project-one">
+              <div className="carousel-wrapper-two">
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img alt="" src={cities} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={packages} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={stripe} />
+                  </Carousel.Item>
+                </Carousel>
+                <div className="tech-stack">
+                  <img alt="react" src={react} />
+                  <img alt="hooks" src={hooks} />
+                  <img alt="firebase" src={firebase} />
+                  <img alt="stripe" src={stripeLogo} />
+                </div>
+              </div>
+              <div className="project-description">
+                <div className="description">
+                  <h1>Your Tour</h1>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+                    Often times it gets stressful picking where to go in a new
+                    city. Your Tour aims to help with this. Professional locals
+                    are sponsord to create only the best of the best packages,
+                    that they believe are the MUST go to places in any given
+                    city. Travelers can then purchase high quality, custom
+                    tailored packages to meet every need.
+                  </p>
+                  <div className="links">
+                    <a
+                      className="links-div"
+                      href="https://github.com/lambda-team-builder"
+                    >
+                      <i className="fab fa-git-square " />
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="main-portfolio-section">
+          <div className="everything">
+            <div className="project-one-wrapper project-two">
               <div className="project-description">
                 <div className="description">
                   <h1>AxisCare Home Care System Preferences</h1>
@@ -197,8 +254,12 @@ function AboutMe(props) {
                 </div>
               </div>
               <div className="carousel-wrapper-two">
-                <div className="tech-stack">
-                  <img alt="" src={null} />
+                <div
+                  className="tech-stack"
+                  style={{ justifyContent: "space-evenly" }}
+                >
+                  <img alt="react" src={react} />
+                  <img alt="hooks" src={hooks} />
                 </div>
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -218,7 +279,7 @@ function AboutMe(props) {
 
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two">
+            <div className="project-one-wrapper project-one">
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -270,7 +331,7 @@ function AboutMe(props) {
                       </span>
                     </a>
 
-                    <a
+                    {/* <a
                       className="links-div"
                       href="https://tiemendo-marketing.netlify.com/"
                     >
@@ -280,7 +341,7 @@ function AboutMe(props) {
                       >
                         Visit Website
                       </span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -289,7 +350,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one">
+            <div className="project-one-wrapper project-two">
               <div className="project-description">
                 <div className="description">
                   <h1>Team Builder </h1>
@@ -318,7 +379,7 @@ function AboutMe(props) {
                       </span>
                     </a>
 
-                    <a
+                    {/* <a
                       className="links-div"
                       href="https://lambda-team-builder.netlify.com/login"
                     >
@@ -328,7 +389,7 @@ function AboutMe(props) {
                       >
                         Visit Website
                       </span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -356,7 +417,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two">
+            <div className="project-one-wrapper project-one">
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -399,7 +460,7 @@ function AboutMe(props) {
                         View Code
                       </span>
                     </a>
-
+                    {/* 
                     <a
                       className="links-div"
                       href="https://agitated-curran-1cd505.netlify.com/login"
@@ -410,7 +471,7 @@ function AboutMe(props) {
                       >
                         Visit Website
                       </span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -419,7 +480,7 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one ">
+            <div className="project-one-wrapper project-two">
               <div className="project-description">
                 <div className="description">
                   <h1>Air Fitness</h1>
@@ -443,7 +504,7 @@ function AboutMe(props) {
                       </span>
                     </a>
 
-                    <a
+                    {/* <a
                       className="links-div"
                       href="https://airfitness.netlify.com"
                     >
@@ -453,7 +514,7 @@ function AboutMe(props) {
                       >
                         Visit Website
                       </span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>

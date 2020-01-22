@@ -247,9 +247,17 @@ function AboutMe(props) {
                     navigation.
                   </p>
                   <div className="links">
-                    <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
-                      (Proprietary Content)
-                    </p>
+                    <a
+                      className="links-div"
+                      href="https://github.com/chasegarsee/system-preferences"
+                    >
+                      <i className="fab fa-git-square " />
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>

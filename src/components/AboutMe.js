@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import video from "./assets/background4.mp4";
 import logo from "../img-video/logo5.png";
 import logoDark from "../img-video/logo5Dark.png";
+import comments from "../img-video/social-family/comments.png";
+import editDetails from "../img-video/social-family/editDetails.png";
+import loggedIn from "../img-video/social-family/loggedIn.png";
+import loggedOut from "../img-video/social-family/loggedOut.png";
+import notifications from "../img-video/social-family/notifications.png";
 import caregiverSetup from "../img-video/axiscare/caregiver-setup.png";
 import darkMode from "../img-video/axiscare/dark-mode.png";
 import sideBarNavigation from "../img-video/axiscare/side-bar-navigation.png";
@@ -183,6 +188,147 @@ function AboutMe(props) {
         <div className="main-portfolio-section">
           <div className="everything">
             <div className="project-one-wrapper project-one">
+              <div className="carousel-wrapper">
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img alt="" src={loggedOut} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={loggedIn} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={comments} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={notifications} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={editDetails} />
+                  </Carousel.Item>
+                </Carousel>
+                <div className="tech-stack">
+                  <img alt="" src={react} />
+                  <img alt="" src={redux} />
+                  <img alt="" src={firebase} />
+                </div>
+              </div>
+
+              <div className="project-description">
+                <div className="description">
+                  <h1>Social Family</h1>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+                    An application to keep my family connected without having to
+                    see the noise and marketing from the mainstream social media
+                    applications. I asked myself, "Why consume when I can
+                    create?". I Created this Twitter-like app in 3 weeks and
+                    plan to continue adding more features and implementation,
+                    including adding a Direct Messaging feature.
+                  </p>
+                  <div className="links">
+                    <a
+                      className="links-div"
+                      href="https://github.com/chasegarsee/Social-Family-Frontend"
+                    >
+                      <i className="fab fa-git-square " />
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
+                    </a>
+
+                    <a
+                      className="links-div"
+                      href="https://social-family.netlify.com/"
+                    >
+                      <i className="fas fa-tv " />
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        Visit Website
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="main-portfolio-section">
+          <div className="everything">
+            <div className="project-one-wrapper project-two">
+              <div className="project-description">
+                <div className="description">
+                  <h1>TIEME NDO CRM </h1>
+                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+                    Beautifully simple tools made for Tieme Ndo to improve the
+                    productivity of both their organization and clients. The
+                    Tieme Ndo CRM was designed to make managing all parts of the
+                    company & client relationship as easy as possible.
+                    Minimalism, performance, and ease of use are carefully woven
+                    into each feature of the product.
+                  </p>
+                  <div className="links">
+                    <a
+                      className="links-div"
+                      href="https://github.com/labs13-agriculture"
+                    >
+                      <i className="fab fa-git-square " />
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        View Code
+                      </span>
+                    </a>
+
+                    <a
+                      className="links-div"
+                      href="https://tiemendo-marketing.netlify.com/"
+                    >
+                      <i className="fas fa-tv " />
+                      <span
+                        className={props.darkMode ? "so-dark" : "not-so-dark"}
+                      >
+                        Visit Website
+                      </span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="carousel-wrapper-two">
+                <div className="tech-stack">
+                  <img alt="" src={react} />
+                  <img alt="" src={redux} />
+                  <img alt="" src={java} />
+                  <img alt="" src={spring} />
+                  <img alt="" src={postgres} />
+                </div>
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img alt="" src={tieme} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={searchUsers} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={manage} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={searchFarmers} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={inventory} />
+                  </Carousel.Item>
+                </Carousel>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="main-portfolio-section">
+          <div className="everything">
+            <div className="project-one-wrapper project-one">
               <div className="carousel-wrapper-two">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -291,74 +437,22 @@ function AboutMe(props) {
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={tieme} />
+                    <img alt="" src={classes} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={searchUsers} />
+                    <img alt="" src={projects} />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={manage} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={searchFarmers} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={inventory} />
+                    <img alt="" src={roles} />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">
                   <img alt="" src={react} />
-                  <img alt="" src={redux} />
-                  <img alt="" src={java} />
-                  <img alt="" src={spring} />
-                  <img alt="" src={postgres} />
+                  <img alt="" src={hooks} />
+                  <img alt="" src={node} />
+                  <img alt="" src={express} />
                 </div>
               </div>
-
-              <div className="project-description">
-                <div className="description">
-                  <h1>TIEME NDO CRM </h1>
-                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
-                    Beautifully simple tools made for Tieme Ndo to improve the
-                    productivity of both their organization and clients. The
-                    Tieme Ndo CRM was designed to make managing all parts of the
-                    company & client relationship as easy as possible.
-                    Minimalism, performance, and ease of use are carefully woven
-                    into each feature of the product.
-                  </p>
-                  <div className="links">
-                    <a
-                      className="links-div"
-                      href="https://github.com/labs13-agriculture"
-                    >
-                      <i className="fab fa-git-square " />
-                      <span
-                        className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
-                    </a>
-
-                    {/* <a
-                      className="links-div"
-                      href="https://tiemendo-marketing.netlify.com/"
-                    >
-                      <i className="fas fa-tv " />
-                      <span
-                        className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        Visit Website
-                      </span>
-                    </a> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="main-portfolio-section">
-          <div className="everything">
-            <div className="project-one-wrapper project-two">
               <div className="project-description">
                 <div className="description">
                   <h1>Team Builder </h1>
@@ -387,7 +481,7 @@ function AboutMe(props) {
                       </span>
                     </a>
 
-                    {/* <a
+                    <a
                       className="links-div"
                       href="https://lambda-team-builder.netlify.com/login"
                     >
@@ -397,52 +491,16 @@ function AboutMe(props) {
                       >
                         Visit Website
                       </span>
-                    </a> */}
+                    </a>
                   </div>
                 </div>
-              </div>
-              <div className="carousel-wrapper-two">
-                <div className="tech-stack">
-                  <img alt="" src={react} />
-                  <img alt="" src={hooks} />
-                  <img alt="" src={node} />
-                  <img alt="" src={express} />
-                </div>
-                <Carousel interval={8000}>
-                  <Carousel.Item>
-                    <img alt="" src={classes} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={projects} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={roles} />
-                  </Carousel.Item>
-                </Carousel>
               </div>
             </div>
           </div>
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one">
-              <div className="carousel-wrapper">
-                <Carousel interval={8000}>
-                  <Carousel.Item>
-                    <img alt="" src={voidLogin} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={VOID} />
-                  </Carousel.Item>
-                </Carousel>
-                <div className="tech-stack">
-                  <img alt="" src={react} />
-                  <img alt="" src={hooks} />
-                  <img alt="" src={python} />
-                  <img alt="" src={django} />
-                </div>
-              </div>
-
+            <div className="project-one-wrapper project-two">
               <div className="project-description">
                 <div className="description">
                   <h1>The Void </h1>
@@ -468,7 +526,6 @@ function AboutMe(props) {
                         View Code
                       </span>
                     </a>
-                    {/* 
                     <a
                       className="links-div"
                       href="https://agitated-curran-1cd505.netlify.com/login"
@@ -479,16 +536,54 @@ function AboutMe(props) {
                       >
                         Visit Website
                       </span>
-                    </a> */}
+                    </a>
                   </div>
                 </div>
+              </div>
+              <div className="carousel-wrapper">
+                <div className="tech-stack">
+                  <img alt="" src={react} />
+                  <img alt="" src={hooks} />
+                  <img alt="" src={python} />
+                  <img alt="" src={django} />
+                </div>
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img alt="" src={voidLogin} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={VOID} />
+                  </Carousel.Item>
+                </Carousel>
               </div>
             </div>
           </div>
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two">
+            <div className="project-one-wrapper project-one">
+              <div className="carousel-wrapper">
+                <Carousel interval={8000}>
+                  <Carousel.Item>
+                    <img alt="" src={airFitness} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={createClass} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={selectClass} />
+                  </Carousel.Item>
+                  <Carousel.Item>
+                    <img alt="" src={manageClass} />
+                  </Carousel.Item>
+                </Carousel>
+                <div className="tech-stack">
+                  <img alt="" src={react} />
+                  <img alt="" src={redux} />
+                  <img alt="" src={HTML} />
+                  <img alt="" src={CSS} />
+                </div>
+              </div>
               <div className="project-description">
                 <div className="description">
                   <h1>Air Fitness</h1>
@@ -511,8 +606,7 @@ function AboutMe(props) {
                         View Code
                       </span>
                     </a>
-
-                    {/* <a
+                    <a
                       className="links-div"
                       href="https://airfitness.netlify.com"
                     >
@@ -522,31 +616,9 @@ function AboutMe(props) {
                       >
                         Visit Website
                       </span>
-                    </a> */}
+                    </a>
                   </div>
                 </div>
-              </div>
-              <div className="carousel-wrapper-two">
-                <div className="tech-stack">
-                  <img alt="" src={react} />
-                  <img alt="" src={redux} />
-                  <img alt="" src={HTML} />
-                  <img alt="" src={CSS} />
-                </div>
-                <Carousel interval={8000}>
-                  <Carousel.Item>
-                    <img alt="" src={airFitness} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={createClass} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={selectClass} />
-                  </Carousel.Item>
-                  <Carousel.Item>
-                    <img alt="" src={manageClass} />
-                  </Carousel.Item>
-                </Carousel>
               </div>
             </div>
           </div>

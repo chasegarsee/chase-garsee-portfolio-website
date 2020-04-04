@@ -238,9 +238,7 @@ function AboutMe(props) {
                       <i className="fab fa-git-square " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
+                      ></span>
                     </a>
 
                     <a
@@ -250,9 +248,7 @@ function AboutMe(props) {
                       <i className="fas fa-tv " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        Visit Website
-                      </span>
+                      ></span>
                     </a>
                   </div>
                 </div>
@@ -289,9 +285,7 @@ function AboutMe(props) {
                       <i className="fab fa-git-square " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
+                      ></span>
                     </a>
 
                     <a
@@ -301,9 +295,7 @@ function AboutMe(props) {
                       <i className="fas fa-tv " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        Visit Website
-                      </span>
+                      ></span>
                     </a>
                   </div>
                 </div>
@@ -385,9 +377,7 @@ function AboutMe(props) {
                       <i className="fab fa-git-square " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
+                      ></span>
                     </a>
                   </div>
                 </div>
@@ -424,9 +414,7 @@ function AboutMe(props) {
                       <i className="fab fa-git-square " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
+                      ></span>
                     </a>
                   </div>
                 </div>
@@ -506,9 +494,7 @@ function AboutMe(props) {
                       <i className="fab fa-git-square " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
+                      ></span>
                     </a>
 
                     <a
@@ -518,9 +504,7 @@ function AboutMe(props) {
                       <i className="fas fa-tv " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        Visit Website
-                      </span>
+                      ></span>
                     </a>
                   </div>
                 </div>
@@ -558,9 +542,7 @@ function AboutMe(props) {
                       <i className="fab fa-git-square " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
+                      ></span>
                     </a>
                     <a
                       className="links-div"
@@ -569,9 +551,7 @@ function AboutMe(props) {
                       <i className="fas fa-tv " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        Visit Website
-                      </span>
+                      ></span>
                     </a>
                   </div>
                 </div>
@@ -644,9 +624,7 @@ function AboutMe(props) {
                       <i className="fab fa-git-square " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        View Code
-                      </span>
+                      ></span>
                     </a>
                     <a
                       className="links-div"
@@ -655,9 +633,7 @@ function AboutMe(props) {
                       <i className="fas fa-tv " />
                       <span
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
-                      >
-                        Visit Website
-                      </span>
+                      ></span>
                     </a>
                   </div>
                 </div>

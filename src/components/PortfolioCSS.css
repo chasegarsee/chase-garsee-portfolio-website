@@ -99,7 +99,7 @@ a:hover {
 
 .axis-care {
   background: linear-gradient(
-    -55deg,
+    55deg,
     #155fc7,
     rgb(51, 112, 196) 50%,
     #fff calc(20% + 1px),
@@ -113,7 +113,7 @@ a:hover {
 
 .axis-care-dark {
   background: linear-gradient(
-    55deg,
+    -55deg,
     #155fc7,
     rgb(51, 112, 196) 50%,
     #1f2022 calc(20% + 1px),
@@ -127,9 +127,9 @@ a:hover {
 
 .team-builder {
   background: linear-gradient(
-    22deg,
+    -10deg,
     #4c692c,
-    #002632 50%,
+    #002632 30%,
     #fff calc(20% + 1px),
     #fff 60%,
     #fff calc(60% + 1px),
@@ -141,7 +141,7 @@ a:hover {
 
 .team-builder-dark {
   background: linear-gradient(
-    -22deg,
+    22deg,
     #4c692c,
     #002632 50%,
     #1f2022 calc(20% + 1px),
@@ -155,7 +155,7 @@ a:hover {
 
 .the-void {
   background: linear-gradient(
-    -45deg,
+    45deg,
     #652822 20%,
     #067008 50%,
     #fff calc(20% + 1px),
@@ -169,7 +169,7 @@ a:hover {
 
 .the-void-dark {
   background: linear-gradient(
-    45deg,
+    -45deg,
     #1f2022,
     #652822 50%,
     #1f2022 calc(20% + 1px),
@@ -183,7 +183,7 @@ a:hover {
 
 .air-fitness {
   background: linear-gradient(
-    35deg,
+    -35deg,
     #0b0c0f 20%,
     #5d5e60 50%,
     #fff calc(20% + 1px),
@@ -197,7 +197,7 @@ a:hover {
 
 .air-fitness-dark {
   background: linear-gradient(
-    -35deg,
+    35deg,
     #0b0c0f,
     #5d5e60 50%,
     #1f2022 calc(20% + 1px),

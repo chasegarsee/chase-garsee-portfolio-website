@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import video2 from "./assets/PortfolioVideo.mov";
+import video from "./assets/PortfolioVideo.mov";
 import logo from "../img-video/logo5.png";
 import logoDark from "../img-video/logo5Dark.png";
 import comments from "../img-video/social-family/comments.png";
@@ -104,7 +104,7 @@ function AboutMe(props) {
                 <source
                   style={{ zIndex: "1" }}
                   alt="header video"
-                  src={video2}
+                  src={video}
                   type="video/mp4"
                   autoPlay
                   loop

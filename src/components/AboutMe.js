@@ -93,6 +93,7 @@ function AboutMe(props) {
           {!props.darkMode ? (
             <div className="video-container">
               <video
+                preload="auto"
                 className="video-background"
                 playsInline
                 loop
@@ -102,6 +103,7 @@ function AboutMe(props) {
               >
                 <source
                   style={{ zIndex: "1" }}
+                  alt="header video"
                   src={video}
                   type="video/mp4"
                   autoPlay

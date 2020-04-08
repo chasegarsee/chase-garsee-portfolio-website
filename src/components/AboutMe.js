@@ -666,7 +666,10 @@ function AboutMe(props) {
           </div>
         </div>
         <div>
-          <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+          <p
+            style={{ fontSize: 14 }}
+            className={props.darkMode ? "so-dark" : "not-so-dark"}
+          >
             COPYRIGHT © 2020 CHASE GARSEE
           </p>
         </div>

@@ -457,7 +457,13 @@ function AboutMe(props) {
 
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one">
+            <div
+              className={
+                props.darkMode
+                  ? "project-one-wrapper project-one team-builder-dark"
+                  : "project-one-wrapper project-one team-builder"
+              }
+            >
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -524,7 +530,13 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two">
+            <div
+              className={
+                props.darkMode
+                  ? "project-one-wrapper project-two the-void-dark"
+                  : "project-one-wrapper project-two the-void"
+              }
+            >
               <div className="project-description">
                 <div className="description">
                   <h1>The Void </h1>
@@ -585,7 +597,13 @@ function AboutMe(props) {
         </div>
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one">
+            <div
+              className={
+                props.darkMode
+                  ? "project-one-wrapper project-one air-fitness-dark"
+                  : "project-one-wrapper project-one air-fitness"
+              }
+            >
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>

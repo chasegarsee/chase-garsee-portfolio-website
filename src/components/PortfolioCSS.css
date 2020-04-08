@@ -125,6 +125,90 @@ a:hover {
   );
 }
 
+.team-builder {
+  background: linear-gradient(
+    22deg,
+    #4c692c,
+    #002632 50%,
+    #fff calc(20% + 1px),
+    #fff 60%,
+    #fff calc(60% + 1px),
+    #fff 70%,
+    #fff calc(70% + 1px),
+    #fff
+  );
+}
+
+.team-builder-dark {
+  background: linear-gradient(
+    -22deg,
+    #4c692c,
+    #002632 50%,
+    #1f2022 calc(20% + 1px),
+    #1f2022 60%,
+    #1f2022 calc(60% + 1px),
+    #1f2022 70%,
+    #1f2022 calc(70% + 1px),
+    #1f2022
+  );
+}
+
+.the-void {
+  background: linear-gradient(
+    -45deg,
+    #652822 20%,
+    #067008 50%,
+    #fff calc(20% + 1px),
+    #fff 60%,
+    #fff calc(60% + 1px),
+    #fff 70%,
+    #fff calc(70% + 1px),
+    #fff
+  );
+}
+
+.the-void-dark {
+  background: linear-gradient(
+    45deg,
+    #1f2022,
+    #652822 50%,
+    #1f2022 calc(20% + 1px),
+    #1f2022 60%,
+    #1f2022 calc(60% + 1px),
+    #1f2022 70%,
+    #1f2022 calc(70% + 1px),
+    #1f2022
+  );
+}
+
+.air-fitness {
+  background: linear-gradient(
+    35deg,
+    #0b0c0f 20%,
+    #5d5e60 50%,
+    #fff calc(20% + 1px),
+    #fff 60%,
+    #fff calc(60% + 1px),
+    #fff 70%,
+    #fff calc(70% + 1px),
+    #fff
+  );
+}
+
+.air-fitness-dark {
+  background: linear-gradient(
+    -35deg,
+    #0b0c0f,
+    #5d5e60 50%,
+    #1f2022 calc(20% + 1px),
+    #1f2022 60%,
+    #1f2022 calc(60% + 1px),
+    #1f2022 70%,
+    #1f2022 calc(70% + 1px),
+    #1f2022
+  );
+}
+
 .carousel-wrapper {
   display: flex;
   margin: 2% 0 2% 2%;

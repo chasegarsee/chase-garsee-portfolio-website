@@ -63,11 +63,11 @@ function AboutMe(props) {
 
   let style = {
     backgroundColor: change ? "#54545469" : "transparent",
-    transition: "600ms ease"
+    transition: "600ms ease",
   };
 
   let social = {
-    color: change ? "rgb(0, 115, 255)" : "#545454"
+    color: change ? "rgb(0, 115, 255)" : "#545454",
   };
   return (
     <div className="main-section">
@@ -187,7 +187,13 @@ function AboutMe(props) {
 
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one">
+            <div
+              className={
+                props.darkMode
+                  ? "project-one-wrapper social-family-dark"
+                  : " project-one-wrapper project-one social-family"
+              }
+            >
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -257,7 +263,13 @@ function AboutMe(props) {
 
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two">
+            <div
+              className={
+                props.darkMode
+                  ? "project-one-wrapper tieme-ndo-dark project-two"
+                  : "project-one-wrapper tieme-ndo project-two"
+              }
+            >
               <div className="project-description">
                 <div className="description">
                   <h1>TIEME NDO CRM </h1>
@@ -328,7 +340,13 @@ function AboutMe(props) {
 
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-one">
+            <div
+              className={
+                props.darkMode
+                  ? "project-one-wrapper project-one your-tour-dark"
+                  : "project-one-wrapper project-one your-tour"
+              }
+            >
               <div className="carousel-wrapper-two">
                 <Carousel interval={8000}>
                   <Carousel.Item>
@@ -380,7 +398,13 @@ function AboutMe(props) {
 
         <div className="main-portfolio-section">
           <div className="everything">
-            <div className="project-one-wrapper project-two">
+            <div
+              className={
+                props.darkMode
+                  ? "project-one-wrapper project-two axis-care-dark"
+                  : "project-one-wrapper project-two axis-care"
+              }
+            >
               <div className="project-description">
                 <div className="description">
                   <h1>AxisCare Home Care System Preferences</h1>

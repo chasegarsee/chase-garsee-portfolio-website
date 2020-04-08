@@ -11,18 +11,118 @@ a:hover {
   height: 800px;
 }
 
-.project-one {
-  background-image: radial-gradient(
-      at 50% 100%,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
-    linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.25) 0%,
-      rgba(0, 0, 0, 0.516) 100%
-    );
-  background-blend-mode: screen, overlay;
+.social-family {
+  transition: all 0.5s ease;
+  background: linear-gradient(
+    -30deg,
+    #a01839,
+    #c64343 50%,
+    #fff calc(20% + 1px),
+    #fff 60%,
+    #fff calc(60% + 1px),
+    #fff 70%,
+    #fff calc(70% + 1px),
+    #fff
+  );
+}
+
+.social-family-dark {
+  transition: all 0.5s ease;
+  background: linear-gradient(
+    30deg,
+    #a01839,
+    #c64343 50%,
+    #1f2022 calc(20% + 1px),
+    #1f2022 60%,
+    #1f2022 calc(60% + 1px),
+    #1f2022 70%,
+    #1f2022 calc(70% + 1px),
+    #1f2022
+  );
+}
+
+.tieme-ndo {
+  background: linear-gradient(
+    40deg,
+    #3c384a,
+    #426361 50%,
+    #fff calc(20% + 1px),
+    #fff 60%,
+    #fff calc(60% + 1px),
+    #fff 70%,
+    #fff calc(70% + 1px),
+    #fff
+  );
+}
+
+.tieme-ndo-dark {
+  background: linear-gradient(
+    -40deg,
+    #3c384a,
+    #426361 50%,
+    #1f2022 calc(20% + 1px),
+    #1f2022 60%,
+    #1f2022 calc(60% + 1px),
+    #1f2022 70%,
+    #1f2022 calc(70% + 1px),
+    #1f2022
+  );
+}
+
+.your-tour {
+  background: linear-gradient(
+    -20deg,
+    #8260a7,
+    #f09aa4 50%,
+    #fff calc(20% + 1px),
+    #fff 60%,
+    #fff calc(60% + 1px),
+    #fff 70%,
+    #fff calc(70% + 1px),
+    #fff
+  );
+}
+
+.your-tour-dark {
+  background: linear-gradient(
+    20deg,
+    #8260a7,
+    #f09aa4 50%,
+    #1f2022 calc(20% + 1px),
+    #1f2022 60%,
+    #1f2022 calc(60% + 1px),
+    #1f2022 70%,
+    #1f2022 calc(70% + 1px),
+    #1f2022
+  );
+}
+
+.axis-care {
+  background: linear-gradient(
+    -55deg,
+    #155fc7,
+    rgb(51, 112, 196) 50%,
+    #fff calc(20% + 1px),
+    #fff 60%,
+    #fff calc(60% + 1px),
+    #fff 70%,
+    #fff calc(70% + 1px),
+    #fff
+  );
+}
+
+.axis-care-dark {
+  background: linear-gradient(
+    55deg,
+    #155fc7,
+    rgb(51, 112, 196) 50%,
+    #1f2022 calc(20% + 1px),
+    #1f2022 60%,
+    #1f2022 calc(60% + 1px),
+    #1f2022 70%,
+    #1f2022 calc(70% + 1px),
+    #1f2022
+  );
 }
 
 .carousel-wrapper {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import video from "./assets/background4.mp4";
+import video from "./assets/background5.mp4";
 import logo from "../img-video/logo5.png";
 import logoDark from "../img-video/logo5Dark.png";
 import comments from "../img-video/social-family/comments.png";
@@ -93,7 +93,6 @@ function AboutMe(props) {
           {!props.darkMode ? (
             <div className="video-container">
               <video
-                preload="auto"
                 className="video-background"
                 playsInline
                 loop

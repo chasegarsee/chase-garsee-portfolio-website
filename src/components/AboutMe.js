@@ -507,6 +507,7 @@ function AboutMe(props) {
                     >
                       <i className="fab fa-git-square " />
                       <span
+                        style={{ color: "white" }}
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
                       >
                         View Code
@@ -519,6 +520,7 @@ function AboutMe(props) {
                     >
                       <i className="fas fa-tv " />
                       <span
+                        style={{ color: "white" }}
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
                       >
                         Visit Website
@@ -541,8 +543,8 @@ function AboutMe(props) {
             >
               <div className="project-description">
                 <div className="description">
-                  <h1>The Void </h1>
-                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+                  <h1 style={{ color: "white" }}>The Void </h1>
+                  <p className={props.darkMode ? "so-dark" : "so-dark"}>
                     Void dungeon is a multi-user dungeon that allows you to
                     explore and interact with other users in the game. With an
                     inherited back-end framed out with Python and Django, our
@@ -559,6 +561,7 @@ function AboutMe(props) {
                     >
                       <i className="fab fa-git-square " />
                       <span
+                        style={{ color: "white" }}
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
                       >
                         View Code
@@ -570,6 +573,7 @@ function AboutMe(props) {
                     >
                       <i className="fas fa-tv " />
                       <span
+                        style={{ color: "white" }}
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
                       >
                         Visit Website
@@ -630,8 +634,8 @@ function AboutMe(props) {
               </div>
               <div className="project-description">
                 <div className="description">
-                  <h1>Air Fitness</h1>
-                  <p className={props.darkMode ? "so-dark" : "not-so-dark"}>
+                  <h1 style={{ color: "white" }}>Air Fitness</h1>
+                  <p className={props.darkMode ? "so-dark" : "so-dark"}>
                     Today, fitness happens everywhere - a park, an unfinished
                     basement, a garage gym, etc.- not just gyms. Certified
                     fitness instructors need an app that takes the awkwardness
@@ -645,6 +649,7 @@ function AboutMe(props) {
                     >
                       <i className="fab fa-git-square " />
                       <span
+                        style={{ color: "white" }}
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
                       >
                         View Code
@@ -656,6 +661,7 @@ function AboutMe(props) {
                     >
                       <i className="fas fa-tv " />
                       <span
+                        style={{ color: "white" }}
                         className={props.darkMode ? "so-dark" : "not-so-dark"}
                       >
                         Visit Website

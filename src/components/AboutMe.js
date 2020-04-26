@@ -79,7 +79,7 @@ function AboutMe(props) {
                 <source
                   style={{ zIndex: "1" }}
                   alt="header video"
-                  src="https://res.cloudinary.com/dpcbeqsys/video/upload/v1587916342/PortfolioVideo_vkjkxh.mov"
+                  src="https://res.cloudinary.com/dpcbeqsys/video/upload/v1587929554/Dot_Blast_07_-_Medium_-_HD_1080_yg0vqb.mp4"
                   type="video/mp4"
                   autoPlay
                   loop
@@ -91,14 +91,14 @@ function AboutMe(props) {
               <video
                 className="video-background"
                 playsInline
-                loop
+                loops
                 autoPlay
                 muted
                 style={{ width: "100%" }}
               >
                 <source
                   style={{ zIndex: "1" }}
-                  src="https://res.cloudinary.com/dpcbeqsys/video/upload/v1587916342/PortfolioVideo_vkjkxh.mov"
+                  src="https://res.cloudinary.com/dpcbeqsys/video/upload/v1587929554/Dot_Blast_07_-_Medium_-_HD_1080_yg0vqb.mp4"
                   type="video/mp4"
                   autoPlay
                   loop

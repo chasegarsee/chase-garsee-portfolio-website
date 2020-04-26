@@ -1,32 +1,7 @@
 import React, { useState } from "react";
-import video2 from "./assets/PortfolioVideo.mov";
+import { Image } from "cloudinary-react";
 import logo from "../img-video/logo5.png";
 import logoDark from "../img-video/logo5Dark.png";
-import comments from "../img-video/social-family/comments.png";
-import editDetails from "../img-video/social-family/editDetails.png";
-import loggedIn from "../img-video/social-family/loggedIn.png";
-import loggedOut from "../img-video/social-family/loggedOut.png";
-import notifications from "../img-video/social-family/notifications.png";
-import caregiverSetup from "../img-video/axiscare/caregiver-setup.png";
-import darkMode from "../img-video/axiscare/dark-mode.png";
-import sideBarNavigation from "../img-video/axiscare/side-bar-navigation.png";
-import searchUsers from "../img-video/tieme-ndo/search-users.png";
-import searchFarmers from "../img-video/tieme-ndo/search-farmers.png";
-import manage from "../img-video/tieme-ndo/manage.png";
-import inventory from "../img-video/tieme-ndo/inventory.png";
-import tieme from "../img-video/tieme-ndo/tieme.png";
-import classes from "../img-video/team-builder/classes.png";
-import projects from "../img-video/team-builder/projects.png";
-import roles from "../img-video/team-builder/roles.png";
-import VOID from "../img-video/the-void/the-void.png";
-import voidLogin from "../img-video/the-void/void-login.png";
-import airFitness from "../img-video/air-fitness/air-fitness.png";
-import createClass from "../img-video/air-fitness/create-classes.png";
-import selectClass from "../img-video/air-fitness/select-classes.png";
-import manageClass from "../img-video/air-fitness/manage-classes.png";
-import cities from "../img-video/your-tour/cities.png";
-import packages from "../img-video/your-tour/packages.png";
-import stripe from "../img-video/your-tour/stripe.png";
 import react from "../img-video/social-icons/react.png";
 import redux from "../img-video/social-icons/redux.png";
 import hooks from "../img-video/social-icons/react-hooks.png";
@@ -104,7 +79,7 @@ function AboutMe(props) {
                 <source
                   style={{ zIndex: "1" }}
                   alt="header video"
-                  src={video2}
+                  src="https://res.cloudinary.com/dpcbeqsys/video/upload/v1587916342/PortfolioVideo_vkjkxh.mov"
                   type="video/mp4"
                   autoPlay
                   loop
@@ -123,7 +98,7 @@ function AboutMe(props) {
               >
                 <source
                   style={{ zIndex: "1" }}
-                  src={video2}
+                  src="https://res.cloudinary.com/dpcbeqsys/video/upload/v1587916342/PortfolioVideo_vkjkxh.mov"
                   type="video/mp4"
                   autoPlay
                   loop
@@ -199,25 +174,40 @@ function AboutMe(props) {
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={loggedOut} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916114/socialfamily/loggedOut_aiid2m.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={loggedIn} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916114/socialfamily/loggedIn_byb1v3.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={comments} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916114/socialfamily/comments_dykycl.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={notifications} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916114/socialfamily/notifications_uetyqy.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={editDetails} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916115/socialfamily/editDetails_fwrbvv.png"
+                    />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">
-                  <img alt="" src={react} />
-                  <img alt="" src={redux} />
-                  <img alt="" src={firebase} />
+                  <img alt="react" src={react} />
+                  <img alt="redux" src={redux} />
+                  <img alt="firebase" src={firebase} />
                 </div>
               </div>
 
@@ -320,19 +310,34 @@ function AboutMe(props) {
                 </div>
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={tieme} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916033/tiemendo/tieme_mpxmyj.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={searchUsers} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916030/tiemendo/search-farmers_oam3dz.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={manage} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916030/tiemendo/search-users_iqwwyd.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={searchFarmers} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916030/tiemendo/manage_vekh9x.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={inventory} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916032/tiemendo/inventory_plvauv.png"
+                    />
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -352,13 +357,22 @@ function AboutMe(props) {
               <div className="carousel-wrapper-two">
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={cities} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916015/yourtour/cities_w5v1vh.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={packages} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916013/yourtour/stripe_uvkuhm.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={stripe} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916014/yourtour/packages_udki46.png"
+                    />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">
@@ -443,13 +457,22 @@ function AboutMe(props) {
                 </div>
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={caregiverSetup} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916087/axiscare/caregiver-setup_ysfbg7.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={darkMode} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916087/axiscare/dark-mode_tr6kni.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={sideBarNavigation} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916087/axiscare/side-bar-navigation_irzfus.png"
+                    />
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -469,20 +492,29 @@ function AboutMe(props) {
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={classes} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916075/teambuilder/classes_hpbmok.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={projects} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916075/teambuilder/roles_folsel.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={roles} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916075/teambuilder/projects_g6urvh.png"
+                    />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">
-                  <img alt="" src={react} />
-                  <img alt="" src={hooks} />
-                  <img alt="" src={node} />
-                  <img alt="" src={express} />
+                  <img alt="react" src={react} />
+                  <img alt="hooks" src={hooks} />
+                  <img alt="node" src={node} />
+                  <img alt="express" src={express} />
                 </div>
               </div>
               <div className="project-description">
@@ -584,17 +616,23 @@ function AboutMe(props) {
               </div>
               <div className="carousel-wrapper">
                 <div className="tech-stack">
-                  <img alt="" src={react} />
-                  <img alt="" src={hooks} />
-                  <img alt="" src={python} />
-                  <img alt="" src={django} />
+                  <img alt="react" src={react} />
+                  <img alt="hooks" src={hooks} />
+                  <img alt="python" src={python} />
+                  <img alt="django" src={django} />
                 </div>
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={voidLogin} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916048/thevoid/the-void_mdcr7t.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={VOID} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916048/thevoid/void-login_pvvtvw.png"
+                    />
                   </Carousel.Item>
                 </Carousel>
               </div>
@@ -613,23 +651,35 @@ function AboutMe(props) {
               <div className="carousel-wrapper">
                 <Carousel interval={8000}>
                   <Carousel.Item>
-                    <img alt="" src={airFitness} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916102/airfitness/air-fitness_gv7ttb.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={createClass} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916104/airfitness/select-classes_chcvze.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={selectClass} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916103/airfitness/manage-classes_yfuycx.png"
+                    />
                   </Carousel.Item>
                   <Carousel.Item>
-                    <img alt="" src={manageClass} />
+                    <Image
+                      cloudName="process.env.CLOUDINARY_KEY"
+                      publicId="https://res.cloudinary.com/dpcbeqsys/image/upload/v1587916102/airfitness/create-classes_b1vruq.png"
+                    />
                   </Carousel.Item>
                 </Carousel>
                 <div className="tech-stack">
-                  <img alt="" src={react} />
-                  <img alt="" src={redux} />
-                  <img alt="" src={HTML} />
-                  <img alt="" src={CSS} />
+                  <img alt="react" src={react} />
+                  <img alt="redux" src={redux} />
+                  <img alt="html" src={HTML} />
+                  <img alt="css" src={CSS} />
                 </div>
               </div>
               <div className="project-description">

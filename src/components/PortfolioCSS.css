@@ -165,6 +165,10 @@ a:hover {
     #fff calc(70% + 1px),
     #fff
   );
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .the-void-dark {
@@ -179,6 +183,10 @@ a:hover {
     #1f2022 calc(70% + 1px),
     #1f2022
   );
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -o-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .air-fitness {

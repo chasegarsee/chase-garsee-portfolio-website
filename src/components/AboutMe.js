@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Image } from "cloudinary-react";
-import logo from "../img-video/logo5.png";
-import logoDark from "../img-video/logo5Dark.png";
 import react from "../img-video/social-icons/react.png";
 import redux from "../img-video/social-icons/redux.png";
 import hooks from "../img-video/social-icons/react-hooks.png";
@@ -60,11 +58,16 @@ function AboutMe(props) {
       </div>
       <div className="about-me-section">
         <div className="section">
-          <img
-            alt=""
-            src={props.darkMode ? logoDark : logo}
+          <Image
+            cloudName="process.env.CLOUDINARY_KEY"
+            publicId={
+              props.darkMode
+                ? "https://res.cloudinary.com/dpcbeqsys/image/upload/v1587915849/logo5Dark_yvnigj.png"
+                : "https://res.cloudinary.com/dpcbeqsys/image/upload/v1587915849/logo5_colttz.png"
+            }
             className={props.darkMode ? "dark-mode" : ""}
           />
+
           {!props.darkMode ? (
             <div className="video-container">
               <video

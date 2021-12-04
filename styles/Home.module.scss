@@ -46,13 +46,32 @@
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     opacity: .75;
+    background-image: linear-gradient(
+  120deg,rgb(178, 36, 239) 0%, rgb(117, 121, 255) 100%);
   }
+
 }
 
 .title {
   margin: 0;
   line-height: 1.55;
-  font-size: 4rem;
+  font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  @media only screen and (max-width: 900px) {
+    font-size: 2rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 1.85rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
 }
 
 // .light {

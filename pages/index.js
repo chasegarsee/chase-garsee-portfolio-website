@@ -15,11 +15,23 @@ export default function Home( { colorTheme } ) {
         <section>
           <h1 className={styles.title}>
             Hey there, I'm Chase.👋🏼 I'm a{" "}
-            <a href="https://nextjs.org" className="">full stack software engineer</a>
+            <a 
+              href="https://github.com/chasegarsee"
+              className=""
+              target="_blank"
+            >full stack software engineer</a>
             ,{" "}
-            <a href="https://nextjs.org" className="">husband, father, and fitness enthusiast</a>
+            <a
+              href="https://www.instagram.com/chasegarsee/"
+              className=""
+              target="_blank"
+            >husband, father, and fitness enthusiast</a>
             , and{" "}
-            <a href="https://nextjs.org" className="">stock market investor</a>
+            <a
+              href="https://investiscripts.myshopify.com"
+              className=""
+              target="_blank"
+            >stock market investor</a>
             . I am a student of life passionate for growth, helping others achieve their wildest dreams, learning new things, and networking with people from all walks of life.
           </h1>
         </section>

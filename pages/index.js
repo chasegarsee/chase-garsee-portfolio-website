@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import { PLCLogo } from '../components/icons'
+import lambdaLogo from '../public/assets/lambda-logo.png'
+import lambdaLogoWhite from '../public/assets/lambda-logo-white.png'
 
 export default function Home( { colorTheme } ) {
   return (
@@ -35,19 +38,41 @@ export default function Home( { colorTheme } ) {
             . I am a student of life passionate for growth, helping others achieve their wildest dreams, learning new things, and networking with people from all walks of life.
           </h1>
         </section>
+        <section className={styles.employers}>
+          <div className={styles.current}>
+            <h2>
+              Currently
+            </h2>
+            <div className={styles.imageContainer}>
+            <a
+              href="https://preemptivelove.org"
+              className=""
+              target="_blank"
+            >
+              <PLCLogo color={colorTheme === 'dark' ? '#00263D' : "#FFFFFF"} />
+            </a>
+            </div>
+          </div>
+          <div className={styles.previous}>
+            <h2>
+              Previously
+            </h2>
+            <div className={styles.imageContainer}>
+            <a
+              href="https://bloomtech.com"
+              className=""
+              target="_blank"
+            >
+              <Image
+                className={ styles.previousImg}
+                src={ colorTheme === 'dark' ? lambdaLogo : lambdaLogoWhite } 
+                alt='lambda-logo'
+              />
+            </a>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
     </div>
   )
 }

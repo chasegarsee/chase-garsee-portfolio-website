@@ -1,0 +1,33 @@
+.siteFooter {
+  display: flex;
+  justify-content: space-around;
+  a {
+    margin: 0;
+    line-height: 1.55;
+    font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 2.5rem;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      cursor: pointer;
+      transition-property: opacity;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+      opacity: .75;
+    }
+    @media only screen and (max-width: 900px) {
+      font-size: 1.5rem; 
+      transition-property: font-size;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+    @media only screen and (max-width: 500px) {
+      font-size: 1rem; 
+      transition-property: font-size;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+}

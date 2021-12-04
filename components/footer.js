@@ -12,7 +12,7 @@ export default function Footer() {
           Github
         </a>
         <a
-          href="https://www.linkedin.com/chasegarsee/"
+          href="https://www.linkedin.com/in/chasegarsee/"
           className=""
           target="_blank"
         >

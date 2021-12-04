@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
 export default function Home( { colorTheme } ) {
-  console.log(colorTheme)
   return (
     <div className={`${colorTheme === 'dark' ? styles.light : styles.dark} ${styles.container}`}>
       <Head>

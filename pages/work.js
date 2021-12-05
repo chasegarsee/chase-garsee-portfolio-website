@@ -17,7 +17,7 @@ export default function Work() {
       <section>
         <h1 className={styles.title}>This is everything that I am really proud of. I hope you enjoy it. 🤙🏽</h1>
       </section>
-      <section className={styles.workSection}>
+      <section className={`${styles.workSection} grid grid-cols-2 gap-8`}>
         <a
           href="https://preemptivelove.org"
           className=""

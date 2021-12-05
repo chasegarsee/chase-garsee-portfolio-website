@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
-import { PLCLogo } from '../components/icons'
+import { PLCLogoLight, PLCLogoDark } from '../components/icons'
 import lambdaLogo from '../public/assets/lambda-logo.png'
 import lambdaLogoWhite from '../public/assets/lambda-logo-white.png'
 
 export default function Home( { colorTheme } ) {
+  console.log(colorTheme)
   return (
     <div className={`${colorTheme === 'dark' ? styles.light : styles.dark} ${styles.container}`}>
       <Head>
@@ -15,7 +16,7 @@ export default function Home( { colorTheme } ) {
       </Head>
 
       <main className={styles.main}>
-        <section>
+        <section className={styles.section}>
           <h1 className={styles.title}>
             Hey there, I'm Chase.👋🏼 I'm a{" "}
             <a 
@@ -49,7 +50,10 @@ export default function Home( { colorTheme } ) {
               className=""
               target="_blank"
             >
-              <PLCLogo color={colorTheme === 'dark' ? '#00263D' : "#FFFFFF"} />
+              {colorTheme === 'dark'
+                ? <PLCLogoDark />       
+                : <PLCLogoLight />
+              }
             </a>
             </div>
           </div>

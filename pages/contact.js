@@ -10,7 +10,7 @@ const schema = Yup.object().shape({
   message: Yup.string().required("Required"),
 });
 
-export default function Contact( { colorTheme } ) {
+export default function Contact() {
   return (
     <div className={styles.contactContainer}>
       <Head>

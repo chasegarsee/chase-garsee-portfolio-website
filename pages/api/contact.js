@@ -8,7 +8,7 @@ export default function (req, res) {
     host: "smtp.gmail.com",
     auth: {
       user: 'chasegarseesoftwaredevelopment@gmail.com',
-      pass: '',
+      pass: process.env.NEXT_PUBLIC_EMAIL_PK,
     },
     secure: true,
   })

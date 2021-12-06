@@ -1,0 +1,63 @@
+.workContainer {
+  padding: 2.5rem;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0;
+}
+.title {
+  margin: 0;
+  line-height: 1.55;
+  font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  @media only screen and (max-width: 900px) {
+    font-size: 2rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 1.85rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.workSection {
+  margin: 10% 0;
+  a {
+    h2 {
+      font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+      font-weight: 100;
+      font-size: 1.5rem;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: .5rem 0;
+    top: 0;
+    transition-duration: .275s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      cursor: pointer;
+      top: -5px;
+      transition-duration: .275s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+      opacity: .75;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+  }
+}

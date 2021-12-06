@@ -1,0 +1,117 @@
+.container {
+  padding: 2.5rem;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .section {
+    margin: 10% 0;
+  }
+}
+
+.title a {
+  background-image: linear-gradient(
+  120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
+  background-clip: text;
+  background-size: 100%;
+  font-size: inherit;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    opacity: .75;
+    background-image: linear-gradient(
+  120deg,rgb(178, 36, 239) 0%, rgb(117, 121, 255) 100%);
+  }
+
+}
+
+.title {
+  margin: 0;
+  line-height: 1.55;
+  font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  @media only screen and (max-width: 900px) {
+    font-size: 2rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 1.85rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.title,
+.description {
+  text-align: left;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 2.5;
+  font-size: 1.5rem;
+}
+
+.employers {
+  width: 100%;
+  padding: 2rem 0;
+  h2 {
+    font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+  }
+  .current {
+    max-width: 33%;
+  }
+
+  .previous {
+    div {
+      max-width: 50%;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+    }
+  }
+  .imageContainer {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    &:hover {
+      cursor: pointer;
+      top: -4px;
+      left: -4px;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
+      opacity: .75;
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}

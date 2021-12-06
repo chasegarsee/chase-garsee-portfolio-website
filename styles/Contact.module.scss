@@ -1,0 +1,169 @@
+.contactContainer {
+  padding: 2.5rem;
+}
+
+.formContainer {
+  width: 450px;
+}
+
+.titleContainer {
+  margin: 10% 0;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.55;
+  font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  @media only screen and (max-width: 900px) {
+    font-size: 2rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 1.85rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.title a {
+  background-image: linear-gradient(
+  120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
+  background-clip: text;
+  background-size: 100%;
+  font-size: inherit;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    opacity: .75;
+    background-image: linear-gradient(
+  120deg,rgb(178, 36, 239) 0%, rgb(117, 121, 255) 100%);
+  }
+
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.inputLabel {
+  text-align: left;
+}
+.inputField {
+  height: 30px;
+}
+
+.form {
+  max-width: 450px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.input[type="text"],
+.input[type="textarea"],
+.input[type="email"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+}
+
+.button {
+  padding: 19px 39px 18px 39px;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 10px;
+  color: white;
+  background-color: #50358E;
+  width: 100%;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+  font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+.fieldset {
+  border: none;
+}
+
+.legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.label {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding-right: 10px;
+  background-image: linear-gradient(
+    120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
+    background-clip: text;
+    background-size: 100%;
+    font-size: inherit;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 500px) {
+  .formContainer,
+  .form {
+    width: 375px;
+  }
+
+  .button {
+    padding: 12px 25px 12px 25px;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .formContainer,
+  .form {
+    width: 300px;
+  }
+
+.input[type="text"],
+.input[type="textarea"],
+.input[type="email"],
+.inputGroup {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .label {
+    font-size: 12px;
+  }
+
+}

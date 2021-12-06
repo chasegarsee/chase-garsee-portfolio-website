@@ -32,7 +32,7 @@ export default function Contact( { colorTheme } ) {
         <div className={styles.formContainer}>
         <Formik
         enableReinitialize
-        validateOnChange={false}
+        validateOnChange={true}
         validateOnBlur={true}
         validationSchema={schema}
         initialValues={{ name: "", email: "", message: '' }}
@@ -65,11 +65,11 @@ export default function Contact( { colorTheme } ) {
         }) => (
           <form onSubmit={handleSubmit} className={`${styles.form} dark:bg-white bg-gray-900 dark:text-gray-700 text-white`} >
           <fieldset className={styles.fieldset}>
-            <h2 className={styles.title}>Message me!</h2>
+            <h2 className={styles.title}>Message me ✨</h2>
             <formGroup className={styles.inputGroup}>
             <label className={`${styles.label} text-violet-500`} htmlFor="name">{touched.name && errors.name ? errors.name: ''}</label>
             <input
-              placeholder='What do your friends call you?'
+              placeholder="What's your name?"
               className={styles.input}
               id="name"
               name="name"
@@ -83,7 +83,7 @@ export default function Contact( { colorTheme } ) {
             <label className={styles.label} htmlFor="email">{touched.email && errors.email ? errors.email: ''}</label>
               <input
                 className={styles.input}
-                placeholder="What's the best way to get in touch?"
+                placeholder="How can I reach you?"
                 id="email"
                 name="email"
                 type="text"

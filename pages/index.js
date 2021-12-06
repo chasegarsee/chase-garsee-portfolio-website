@@ -29,7 +29,7 @@ export default function Home( { colorTheme } ) {
               href="https://www.instagram.com/chasegarsee/"
               className=""
               target="_blank"
-            >husband, father, and fitness enthusiast</a>
+            >husband, father, fitness enthusiast</a>
             , and{" "}
             <a
               href="https://investiscripts.myshopify.com"

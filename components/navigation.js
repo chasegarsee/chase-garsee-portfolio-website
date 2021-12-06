@@ -10,9 +10,9 @@ export default function Navigation({colorTheme, setTheme}) {
       </div>
       <div className={styles.navitems}>
         {colorTheme === "light" ? (
-          <Moon issaClass='moon-icon' setTheme={setTheme} />
+          <Moon setTheme={setTheme} />
         ) : (
-          <LightBulb issaClass='bulb-icon' setTheme={setTheme} />
+          <LightBulb setTheme={setTheme} />
         )}
         <Link href="/work" className={styles.work}>Work</Link>
         <Link href="/contact" className={styles.contact}>Contact</Link>

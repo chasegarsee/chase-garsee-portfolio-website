@@ -1,4 +1,4 @@
-import '../styles/globals.css'
+import '../styles/globals.scss'
 import Navigation from '../components/navigation'
 import useDarkMode from "../hooks/useDarkMode";
 import Footer from '../components/footer';

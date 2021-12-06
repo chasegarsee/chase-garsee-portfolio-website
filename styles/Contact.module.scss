@@ -1,0 +1,67 @@
+.main {
+  height: 100vh;
+}
+
+.titleContainer {
+  margin: 4rem 0;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.55;
+  font-family: ObjectSans, "Object Sans", Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 3rem;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  @media only screen and (max-width: 900px) {
+    font-size: 2rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 1.85rem; 
+    transition-property: font-size;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.title a {
+  background-image: linear-gradient(
+  120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
+  background-clip: text;
+  background-size: 100%;
+  font-size: inherit;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    cursor: pointer;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    opacity: .75;
+    background-image: linear-gradient(
+  120deg,rgb(178, 36, 239) 0%, rgb(117, 121, 255) 100%);
+  }
+
+}
+
+
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.inputLabel {
+  text-align: left;
+}
+.inputField {
+  height: 30px;
+}

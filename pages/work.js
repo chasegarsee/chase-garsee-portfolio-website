@@ -7,7 +7,7 @@ import styles from '../styles/Work.module.scss'
 
 export default function Work() {
   return (
-    <div>
+    <div className={styles.workContainer}>
     <Head>
       <title>Work</title>
       <meta name="viewport" content="width=device-width, initial-scale=1" />

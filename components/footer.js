@@ -2,8 +2,7 @@ import styles from '../styles/Footer.module.scss'
 
 export default function Footer() {
   return (
-    <footer>
-      <div className={ styles.siteFooter }>
+    <footer className={ styles.siteFooter }>
         <a 
           href="https://github.com/chasegarsee"
           className=""
@@ -32,7 +31,6 @@ export default function Footer() {
         >
           Twitter
         </a>
-      </div>
     </footer>
   )
 }

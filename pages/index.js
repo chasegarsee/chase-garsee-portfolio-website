@@ -6,7 +6,6 @@ import lambdaLogo from '../public/assets/lambda-logo.png'
 import lambdaLogoWhite from '../public/assets/lambda-logo-white.png'
 
 export default function Home( { colorTheme } ) {
-  console.log(colorTheme)
   return (
     <div className={`${colorTheme === 'dark' ? styles.light : styles.dark} ${styles.container}`}>
       <Head>

@@ -1,5 +1,7 @@
 .siteFooter {
-  margin-top: 5%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   a {

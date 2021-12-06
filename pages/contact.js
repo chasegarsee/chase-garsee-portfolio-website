@@ -10,9 +10,9 @@ const schema = Yup.object().shape({
   message: Yup.string().required("Required"),
 });
 
-export default function Contact() {
+export default function Contact( { colorTheme } ) {
   return (
-    <div>
+    <div className={styles.contactContainer}>
       <Head>
         <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,11 +29,11 @@ export default function Contact() {
             >Shoot me a DM</a>, or send a piece of electronic mail. I would love to hear from you!</h1>  
         </section>  
         <section>
-        <div className={styles.container}>
+        <div className={styles.formContainer}>
         <Formik
         enableReinitialize
         validateOnChange={false}
-        validateOnBlur={false}
+        validateOnBlur={true}
         validationSchema={schema}
         initialValues={{ name: "", email: "", message: '' }}
         onSubmit={async (values, { setSubmitting }) => {
@@ -61,12 +61,16 @@ export default function Contact() {
           isSubmitting,
           values,
           errors,
-          touched 
+          touched,
         }) => (
-          <form onSubmit={handleSubmit} className={styles.main} >
+          <form onSubmit={handleSubmit} className={`${styles.form} dark:bg-white bg-gray-900 dark:text-gray-700 text-white`} >
+          <fieldset className={styles.fieldset}>
+            <h2 className={styles.title}>Message me!</h2>
             <formGroup className={styles.inputGroup}>
-            <label htmlFor="name">{`Name ${touched.name && errors.name ? errors.name: ''}`}</label>
+            <label className={`${styles.label} text-violet-500`} htmlFor="name">{touched.name && errors.name ? errors.name: ''}</label>
             <input
+              placeholder='What do your friends call you?'
+              className={styles.input}
               id="name"
               name="name"
               type="text"
@@ -75,9 +79,11 @@ export default function Contact() {
               value={values.name}
             />
             </formGroup>
-            < formGroup className={styles.inputGroup} >
-            <label htmlFor="email">{`Email ${touched.email && errors.email ? errors.email: ''}`}</label>
+            <formGroup className={styles.inputGroup} >
+            <label className={styles.label} htmlFor="email">{touched.email && errors.email ? errors.email: ''}</label>
               <input
+                className={styles.input}
+                placeholder="What's the best way to get in touch?"
                 id="email"
                 name="email"
                 type="text"
@@ -87,17 +93,21 @@ export default function Contact() {
               />
             </formGroup>
             < formGroup className={styles.inputGroup} >
-            <label htmlFor="message">{`Message ${touched.message && errors.message ? errors.message: ''}`}</label>
-              <input
+            <label className={styles.label} htmlFor="message">{touched.message && errors.message ? errors.message: ''}</label>
+              <textarea
+                className={styles.input}
+                placeholder="What's happening?"
                 id="message"
                 name="message"
-                type="text"
+                type="textarea"
+                rows="3"
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.message}
               />
             </formGroup>
-            <button type='submit'>{isSubmitting ? 'Sending...' : "Send"}</button>
+            <button className={styles.button} type='submit'>{isSubmitting ? 'Sending...' : "Send"}</button>
+          </fieldset>
           </form >
         )}
         </Formik>

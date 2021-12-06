@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default function (req, res) {
+  require('dotenv').config()
   
   let nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
@@ -22,9 +23,8 @@ export default function (req, res) {
   }
   transporter.sendMail(mailData, function (err, info) {
     if(err)
-      console.log(err)
+    res.status(500).json({ error: 'message' })
     else
-      console.log(info)
+    res.status(200).json({ info })
   })
-  res.status(200)
 }

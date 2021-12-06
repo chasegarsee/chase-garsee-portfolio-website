@@ -37,9 +37,9 @@ export default function Contact() {
         validationSchema={schema}
         initialValues={{ name: "", email: "", message: '' }}
         onSubmit={async (values, { setSubmitting }) => {
-          setSubmitting(true);
           try {
-          await fetch('/api/contact', {
+          setSubmitting(true);
+          const res = await fetch('/api/contact', {
             method: 'POST',
             headers: {
               'Accept': 'application/json, text/plain, */*',
@@ -47,8 +47,10 @@ export default function Contact() {
             },
             body: JSON.stringify(values)
           })
+          
           } catch(error) {
             console.log(error)
+            setSubmitting(false)
           } finally {
             setSubmitting(false)
           }
@@ -69,7 +71,7 @@ export default function Contact() {
             <formGroup className={styles.inputGroup}>
             <label className={`${styles.label} text-violet-500`} htmlFor="name">{touched.name && errors.name ? errors.name: ''}</label>
             <input
-              placeholder="What's your name?"
+              className={`${styles.input} dark:text-gray-700 text-white`}
               className={styles.input}
               id="name"
               name="name"
@@ -82,7 +84,7 @@ export default function Contact() {
             <formGroup className={styles.inputGroup} >
             <label className={styles.label} htmlFor="email">{touched.email && errors.email ? errors.email: ''}</label>
               <input
-                className={styles.input}
+                className={`${styles.input} dark:text-gray-700 text-white`}
                 placeholder="How can I reach you?"
                 id="email"
                 name="email"
@@ -95,7 +97,7 @@ export default function Contact() {
             < formGroup className={styles.inputGroup} >
             <label className={styles.label} htmlFor="message">{touched.message && errors.message ? errors.message: ''}</label>
               <textarea
-                className={styles.input}
+                className={`${styles.input} dark:text-gray-700 text-white`}
                 placeholder="What's happening?"
                 id="message"
                 name="message"

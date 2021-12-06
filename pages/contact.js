@@ -72,7 +72,7 @@ export default function Contact() {
             <label className={`${styles.label} text-violet-500`} htmlFor="name">{touched.name && errors.name ? errors.name: ''}</label>
             <input
               className={`${styles.input} dark:text-gray-700 text-white`}
-              className={styles.input}
+              placeholder="What's your name?"
               id="name"
               name="name"
               type="text"

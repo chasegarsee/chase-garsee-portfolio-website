@@ -2,10 +2,12 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import { PLCLogoLight, PLCLogoDark } from '../components/icons'
-import lambdaLogo from '../public/assets/lambda-logo.png'
-import lambdaLogoWhite from '../public/assets/lambda-logo-white.png'
+
+import hiltonLogoWhite from '../public/assets/hilton-logo-white.png'
+import hiltonLogoBlack from '../public/assets/hilton-logo-black.png'
 
 export default function Home( { colorTheme } ) {
+  console.log(colorTheme)
   return (
     <div className={`${colorTheme === 'dark' ? styles.light : styles.dark} ${styles.container}`}>
       <Head>
@@ -46,14 +48,15 @@ export default function Home( { colorTheme } ) {
             </h2>
             <div className={styles.imageContainer}>
             <a
-              href="https://preemptivelove.org"
+              href="https://hilton.com"
               className=""
               target="_blank"
             >
-              {colorTheme === 'dark'
-                ? <PLCLogoDark />       
-                : <PLCLogoLight />
-              }
+              <Image
+                className={ styles.previousImg}
+                src={ colorTheme === 'dark' ? hiltonLogoBlack : hiltonLogoWhite } 
+                alt='hilton logo'
+              />
             </a>
             </div>
           </div>
@@ -63,16 +66,18 @@ export default function Home( { colorTheme } ) {
             </h2>
             <div className={styles.imageContainer}>
             <a
-              href="https://bloomtech.com"
+              href="https://preemptivelove.org"
               className=""
               target="_blank"
             >
-              <Image
-                className={ styles.previousImg}
-                src={ colorTheme === 'dark' ? lambdaLogo : lambdaLogoWhite } 
-                alt='lambda-logo'
-              />
+              {colorTheme === 'dark'
+                ? <PLCLogoDark />
+                : colorTheme === 'light'
+                ? <PLCLogoLight />
+                : <PLCLogoLight />
+              }
             </a>
+            
             </div>
           </div>
         </section>

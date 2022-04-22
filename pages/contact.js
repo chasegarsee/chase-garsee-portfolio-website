@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import styles from '../styles/Contact.module.scss'
 import { Formik } from 'formik'
@@ -11,6 +12,7 @@ const schema = Yup.object().shape({
 });
 
 export default function Contact() {
+  const [emailFeedback, setEmailFeedback] = useState('')
   return (
     <div className={styles.contactContainer}>
       <Head>
@@ -47,10 +49,11 @@ export default function Contact() {
             },
             body: JSON.stringify(values)
           })
-          
+           //setEmailFeedback('Message sent!')
           } catch(error) {
             console.log(error)
             setSubmitting(false)
+            //setEmailFeedback('Oops, something when wrong. Please try again, or try and drop me a line later')
           } finally {
             setSubmitting(false)
           }
@@ -108,7 +111,13 @@ export default function Contact() {
                 value={values.message}
               />
             </formGroup>
-            <button className={styles.button} type='submit'>{isSubmitting ? 'Sending...' : "Send"}</button>
+            <button className={styles.button} type='submit'>{
+              isSubmitting 
+                ? 'Sending...' 
+                : emailFeedback 
+                ? emailFeedback 
+                : "Send"
+              }</button>
           </fieldset>
           </form >
         )}

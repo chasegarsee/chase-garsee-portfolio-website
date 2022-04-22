@@ -8,7 +8,6 @@ import hiltonLogoWhite from '../public/assets/hilton-logo-white.png'
 import hiltonLogoBlack from '../public/assets/hilton-logo-black.png'
 
 export default function Home( { colorTheme } ) {
-  console.log(colorTheme)
   return (
     <div className={`${colorTheme === 'dark' ? styles.light : styles.dark} ${styles.container}`}>
       <Head>

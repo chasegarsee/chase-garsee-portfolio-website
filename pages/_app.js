@@ -1,8 +1,8 @@
 import '../styles/globals.scss'
 
-import { useEffect } from 'react'
+//import { useEffect } from 'react'
 import Script from 'next/script'
-import { useRouter } from 'next/router'
+//import { useRouter } from 'next/router'
 import * as gtag from '../library/gtag'
 
 import Navigation from '../components/navigation'
@@ -11,19 +11,18 @@ import Footer from '../components/footer';
 
 function MyApp({ Component, pageProps }) {
   const [colorTheme, setTheme] = useDarkMode();
-  const router = useRouter()
-  useEffect(() => {
-    const handleRouteChange = (url) => {
-      gtag.pageView(url)
-    }
-    router.events.on('routeChangeComplete', handleRouteChange)
-    router.events.on('hashChangeComplete', handleRouteChange)
-    return () => {
-      router.events.off('routeChangeComplete', handleRouteChange)
-      router.events.off('hashChangeComplete', handleRouteChange)
-    }
-  }, [router.events])
-
+  // const router = useRouter()
+  // useEffect(() => {
+  //   const handleRouteChange = (url) => {
+  //     gtag.pageView(url)
+  //   }
+  //   router.events.on('routeChangeComplete', handleRouteChange)
+  //   router.events.on('hashChangeComplete', handleRouteChange)
+  //   return () => {
+  //     router.events.off('routeChangeComplete', handleRouteChange)
+  //     router.events.off('hashChangeComplete', handleRouteChange)
+  //   }
+  // }, [router.events])
 
 
   return (

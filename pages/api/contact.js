@@ -23,7 +23,7 @@ export default function (req, res) {
   }
   transporter.sendMail(mailData, function (err, info) {
     if(err)
-    res.status(500).json({ error: 'message' })
+    res.status(500).json({ error: err })
     else
     res.status(200).json({ info })
   })

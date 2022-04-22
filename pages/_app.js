@@ -34,6 +34,7 @@ function MyApp({ Component, pageProps }) {
           strategy="afterInteractive" 
           src="https://www.googleoptimize.com/optimize.js?id=OPT-PTXJ8BQ"
           />
+      </Head>
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
@@ -52,7 +53,6 @@ function MyApp({ Component, pageProps }) {
             `,
           }}
         />
-      </Head>
       <Navigation colorTheme={colorTheme} setTheme={setTheme} />
       <Component colorTheme={colorTheme} {...pageProps} />
       <Footer />

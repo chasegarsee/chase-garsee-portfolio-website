@@ -25,7 +25,7 @@ export default function Contact() {
         <section className={styles.titleContainer}>
           <h1 className={styles.title}>Want to say hi?{" "}
             <a
-              href="https://www.linked.com/in/chasegarsee/"
+              href="https://www.linkedin.com/in/chasegarsee/"
               className=""
               target="_blank"
             >Shoot me a DM</a>, or send a piece of electronic mail. I would love to hear from you!</h1>  

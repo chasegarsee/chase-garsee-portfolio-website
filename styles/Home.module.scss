@@ -14,9 +14,9 @@
 }
 
 .title a {
-  background-image: linear-gradient(
+  background: linear-gradient(
   120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
-  background-image: -webkit-linear-gradient(
+  background: -webkit-linear-gradient(
   120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
   background-clip: text;
   background-size: 100%;
@@ -33,10 +33,11 @@
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     opacity: .75;
-    background-image: linear-gradient(
+    background: linear-gradient(
     120deg,rgb(178, 36, 239) 0%, rgb(117, 121, 255) 100%);
-    background-image: -webkit-linear-gradient(
+    background: -webkit-linear-gradient(
     120deg,rgb(178, 36, 239) 0%, rgb(117, 121, 255) 100%);
+    background-clip: text;
   }
 
 }

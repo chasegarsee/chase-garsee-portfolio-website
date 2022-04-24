@@ -36,6 +36,8 @@
 .title a {
   background-image: linear-gradient(
   120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
   background-image: -webkit-linear-gradient(
   120deg, rgb(117, 121, 255) 0%, rgb(178, 36, 239) 100%);
   background-clip: text;
@@ -48,6 +50,8 @@
   transition-timing-function: ease-in-out;
   &:hover {
     cursor: pointer;
+    background-clip: text;
+    -webkit-background-clip: text;
     transition-property: opacity;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
